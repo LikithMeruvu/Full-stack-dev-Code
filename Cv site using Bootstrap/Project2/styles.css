@@ -1,6 +1,9 @@
 #title{
     background-color:#fff396;
 }
+body{
+    font-family: 'Chau Philomene One', sans-serif;
+}
 h1{
     font-family: 'Chau Philomene One', sans-serif;
     line-height:1.5;
@@ -38,7 +41,15 @@ li{
     margin-right: 40px;
     text-align:center;
 }
-
+#testimonials{
+    padding:7% 15%;
+    text-align: center;
+    background-color:#fff396;
+}
+#menimg{
+    border-radius: 10%;
+    margin:40px auto 0px auto;
+}
 #misicon{
     margin-bottom: 2px;
 }
