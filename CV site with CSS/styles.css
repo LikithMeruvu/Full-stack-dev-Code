@@ -1,0 +1,53 @@
+.ST_INTRO{
+    background-color:white;
+    display: inline-block;
+    position: absolute;
+    right: 265px;
+    top:100px;
+    padding:0px;
+    margin-right:-17px;
+}
+body{
+    background-color:white;
+}
+.INTRO{
+    margin:30px;
+    background-color:white;
+    border-radius:30px;
+}
+#img1{
+    border-radius:30px;
+    margin-left: 40px;
+
+}
+
+#A1{
+    font-size:70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-left: 50px;
+}
+#A2{
+    font-size:30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-left: 50px;
+}
+#A3{
+    margin-left: 50px;
+}
+#B1{
+    position:absolute;
+    right: 300px;
+    background-color:aqua;
+    color:rgb(0, 0, 0);
+    border-radius: 10px;
+    padding:10px
+}
+#B1:hover{
+    background-color:rgb(116, 163, 246);
+    color:azure;
+    border-radius: 15px;
+}

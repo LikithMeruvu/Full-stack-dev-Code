@@ -1,0 +1,31 @@
+a{
+    text-decoration: none;
+}
+
+h1{
+    color: #086e6e;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+h3{
+    color: #69bfbf;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+h2{
+    color: #69bfbf;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+ul{
+    color: #69bfbf;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+hr{
+    border-style: none;
+    border-top-style: dotted;
+    border-color: grey;
+    border-width: 5px;
+    width: 5%;
+}

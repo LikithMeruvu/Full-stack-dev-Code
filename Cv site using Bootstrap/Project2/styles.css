@@ -1,0 +1,102 @@
+#title{
+    background-color:#fff396;
+}
+h1{
+    font-family: 'Chau Philomene One', sans-serif;
+    line-height:1.5;
+    font-size: 2.4rem;
+}
+li{
+    font-family: 'Chau Philomene One', sans-serif;
+}
+.container-fluid{
+    padding:3%;
+}
+.nav-item{
+    padding:0 12px;
+    font-weight: 900;
+}
+.nav-link{
+    font-size:20px;
+    color:black;
+}
+.rotated{
+   transform:rotate(-30deg);
+   padding-right: 60px;
+}
+.nav-link:hover{
+    font-size:20px;
+    color:rgb(118, 118, 118);
+}
+#a1{
+    text-align:center;
+    padding-top: 40px;
+    padding-left: 60px;
+}
+.windows{
+    display:inline-block;
+    margin-right: 40px;
+    text-align:center;
+}
+.what{
+
+}
+#misicon{
+    margin-bottom: 2px;
+}
+.Macos{
+    display:inline-block;
+    margin-right: 40px;
+    text-align:center;
+}
+#features{
+    padding:7% 15%;
+    text-align:center;
+}
+.btn-outline-primary{
+    border:1px solid;
+    font-size: 1.5rem;
+    color:black;
+    /* background-color: white; */
+    font-family: 'Chau Philomene One', sans-serif;
+    border-radius: 10px;
+    border:2px solid;
+}
+.container1{
+    padding-left:0px;
+    padding-right: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @recycle-bin */
+
+/* .btn-primary{
+    border:none;
+    color:rgb(255, 255, 255);
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 1.5rem;
+}
+.btn-primary:hover{
+    border:1px solid;
+    color:black;
+    background-color: white;
+} */

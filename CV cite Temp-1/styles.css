@@ -1,0 +1,21 @@
+#logo{
+    border-radius: 50px;
+    margin-top:10px;
+    padding-top:10px;
+    padding-bottom:7px;
+}
+.container{
+    height: 40px;
+    width: 100%;
+}
+h1{    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#Intro{
+    background-color:#FFF9D7;
+    margin: 30px,30px,30px,30px;
+    border : 1px solid #FFF9D7;
+    /* border-radius : 50px; */
+    margin-left:20px;
+    margin-right: 20px;
+}

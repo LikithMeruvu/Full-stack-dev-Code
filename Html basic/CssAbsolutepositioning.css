@@ -1,0 +1,28 @@
+.container{
+    padding: 20px,20px,20px,20px;
+    /* display: inline-block; */
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
+.container1{
+    padding: 20px,20px,20px,20px;
+    /* display: inline-block; */
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left:108px;
+    top:106px;
+}
+.container2{
+    padding: 20px,20px,20px,20px;
+    /* display: inline-block; */
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left:208px;
+    top:205px;
+}
