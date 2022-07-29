@@ -41,16 +41,19 @@ li{
     margin-right: 40px;
     text-align:center;
 }
-#testimonials{
+.carousel-item{
     padding:7% 15%;
+}
+#testimonials{
+    
     text-align: center;
     background-color:#fff396;
 }
-#testimonialtext{
+.testimonialtext{
     font-size:3rem;
     line-height:1.3;
 }
-#menimg{
+.testimonialimg{
     width:10%;
     border-radius: 100%;
     margin:40px auto 0px auto;
