@@ -54,12 +54,12 @@
           <div class="container1">
             <div class="windows">
               <h3 style="margin:40px 40px 25px 20px; font-family: 'Chau Philomene One', sans-serif;">Windows</h3>
-              <button type="button" class="btn btn-outline-primary btn-lg"><img src="images/windows_4096_black.png"
+              <button type="button" class="btn btn-outline-primary btn-lg" id="windown"><img src="images/windows_4096_black.png"
                   height="40px" width="40px">Download</button>
             </div>
             <div class="Macos">
-              <h3 style="margin:40px 40px 25px 20px; font-family: 'Chau Philomene One', sans-serif;">Mac OS</h3>
-              <button type="button" class="btn btn-outline-primary btn-lg"><img src="images/mac.png" height="40px"
+              <h3 style="margin:40px 40px 25px 20px; font-family: 'Chau Philomene One', sans-serif;" >Mac OS</h3>
+              <button type="button" class="btn btn-outline-primary btn-lg" id="macdown"><img src="images/mac.png" height="40px"
                   width="40px" style="margin-right:7px">Download</button>
             </div>
           </div>
@@ -102,7 +102,8 @@
   <!-- Testimonials -->
 
   <section id="testimonials">
-    <div id="carouselExampleControlsNoTouching" class="carousel carousel-dark slide" data-bs-interval="2500" data-bs-ride="carousel" data-bs-pause="hover">
+    <div id="carouselExampleControlsNoTouching" class="carousel carousel-dark slide" data-bs-interval="2500"
+      data-bs-ride="carousel" data-bs-pause="hover">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <h2 class="testimonialtext"><q> I'm one of the person to read this blog daily. This blog was useful blog ever
@@ -124,17 +125,17 @@
         </div>
       </div>
       <div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
 
   </section>
@@ -143,6 +144,7 @@
   <!-- Press -->
 
   <section id="press">
+    <h1>Recommend by toppers of software industry</h1>
     <img src="images/Adobe-Logo.png" alt="adobe-logo" class="company-logos">
     <img src="images/Amazon-Logo.png" alt="amazon-logo" class="company-logos">
     <img src="images/Google-Emblema.png" alt="google-logo" class="company-logos">
@@ -155,34 +157,60 @@
 
   <section id="pricing">
 
-    <h2>A Plan for Every Dog's Needs</h2>
-    <p>Simple and affordable price plans for your and your dog.</p>
+    <h2>Most good Pricing ever to get knowledge</h2>
+    <p>Simple and affordable price plans for you.</p>
 
+    <div class="row">
+      <div class="price-card col-md-4 col-sm-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Free Plan</h3>
+          </div>
+          <div class="card-body">
+            <h2>Free</h2>
+            <p>Daily Limited Articles</p>
+            <p>No Comment Feature</p>
+            <p>100 Articles Write Per Month</p>
+            <div class="d-grid gap-2">
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign Up</button>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="price-card col-md-4 col-sm-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Gold Plan</h3>
+          </div>
+          <div class="card-body">
+            <h2>$29 / mo</h2>
+            <p>Daily Unlimited Articles</p>
+            <p>Limited Comment Feature</p>
+            <p>500 Articles Write Per month</p>
+            <div class="d-grid gap-2">
+              <button type="button" class="btn btn-lg btn-block btn-outline-success">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <h3>Chihuahua</h3>
-    <h2>Free</h2>
-    <p>5 Matches Per Day</p>
-    <p>10 Messages Per Day</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
-
-
-    <h3>Labrador</h3>
-    <h2>$49 / mo</h2>
-    <p>Unlimited Matches</p>
-    <p>Unlimited Messages</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
-
-
-    <h3>Mastiff</h3>
-    <h2>$99 / mo</h2>
-    <p>Pirority Listing</p>
-    <p>Unlimited Matches</p>
-    <p>Unlimited Messages</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
-
+      <div class="price-card col-md-4 col-sm-12">
+        <div class="card">
+          <div class="card-header">
+            <h3>Premium Plan</h3>
+          </div>
+          <div class="card-body">
+            <h2>$99 / mo</h2>
+            <p>Daily Unlimited Articles</p>
+            <p>Unlimited Comment Feature</p>
+            <p>Unlimited Articles Write Per month</p>
+            <div class="d-grid gap-2">
+              <button type="button" class="btn btn-lg btn-block btn-outline-danger">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
 

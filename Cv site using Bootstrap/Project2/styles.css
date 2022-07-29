@@ -79,7 +79,7 @@ li{
     padding:7% 15%;
     text-align:center;
 }
-.btn-outline-primary{
+#windown{
     border:1px solid;
     font-size: 1.5rem;
     color:black;
@@ -88,9 +88,43 @@ li{
     border-radius: 10px;
     border:2px solid;
 }
+#macdown{
+    border:1px solid;
+    font-size: 1.5rem;
+    color:black;
+    /* background-color: white; */
+    font-family: 'Chau Philomene One', sans-serif;
+    border-radius: 10px;
+    border:2px solid;
+}
+#windown:hover{
+    border:2px solid black;
+    font-size: 1.5rem;
+    color:white;
+    /* background-color: white; */
+    font-family: 'Chau Philomene One', sans-serif;
+    border-radius: 10px;
+}
+#macdown:hover{
+    border:2px solid black;
+    font-size: 1.5rem;
+    color:white;
+    /* background-color: white; */
+    font-family: 'Chau Philomene One', sans-serif;
+    border-radius: 10px;
+}
 .container1{
     padding-left:0px;
     padding-right: 24px;
+}
+
+.price-card{
+    padding:4% 2%;
+    text-align: center;
+}
+#pricing{
+    padding:4% 2%;
+    text-align: center;
 }
 
 
