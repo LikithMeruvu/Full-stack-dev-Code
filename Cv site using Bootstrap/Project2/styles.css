@@ -46,9 +46,23 @@ li{
     text-align: center;
     background-color:#fff396;
 }
+#testimonialtext{
+    font-size:3rem;
+    line-height:1.3;
+}
 #menimg{
-    border-radius: 10%;
+    width:10%;
+    border-radius: 100%;
     margin:40px auto 0px auto;
+}
+#press{
+    background-color:#fff396;
+    text-align: center;
+    padding-bottom: 2%;
+}
+.company-logos{
+    width:10%;
+    margin:0px 20px 0px 20px; 
 }
 #misicon{
     margin-bottom: 2px;
@@ -75,22 +89,6 @@ li{
     padding-left:0px;
     padding-right: 24px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
