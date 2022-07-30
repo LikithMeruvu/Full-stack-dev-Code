@@ -1,5 +1,7 @@
 #title{
     background-color:#fff396;
+    text-align: center;
+    padding-bottom: 10%;
 }
 body{
     font-family: 'Chau Philomene One', sans-serif;
@@ -23,10 +25,22 @@ li{
     font-size:20px;
     color:black;
 }
-.rotated{
-   transform:rotate(-30deg);
-   padding-right: 60px;
-}
+
+.rotated1{
+    transform:rotate(-15deg);
+    /* padding-right: 60px; */
+    position:absolute;
+    right:10%;
+    top:20%;
+ }
+ @media (max-width:1200px){
+    .rotated1{
+        transform:rotate(15deg);
+        /* padding-right: 60px; */
+        padding-left:40px;
+        position:static;
+     }
+ }
 .nav-link:hover{
     font-size:20px;
     color:rgb(118, 118, 118);
@@ -76,8 +90,11 @@ li{
     text-align:center;
 }
 #features{
-    padding:7% 15%;
+    padding:10% 15%;
     text-align:center;
+    background-color: white;
+    position:relative;
+    z-index: 1;
 }
 #windown{
     border:1px solid;
@@ -123,13 +140,20 @@ li{
     text-align: center;
 }
 #pricing{
-    padding:4% 2%;
+    padding:4% 2% 0%;
     text-align: center;
 }
-#cta{
-    padding:3% 15%;
+/* #cta{
+    padding:2% 1%;
     text-align: center;
     background-color: #fff396;
+} */
+
+#contact-me{
+    padding-top: 5%;
+    margin:1%;
+    border:1px solid black;
+    border-radius: 30px;
 }
 .lasticons{
     margin:2% 4%;
@@ -137,13 +161,24 @@ li{
 #footer{
     background-color:#fff396;
     text-align:center;
-    
+    padding:3% 25% 2%;
+}
+.footericon{
+    height:40px;
+    width:40px;
+    margin:2% 3%;
+}
+.content{
+    padding-top:10%;
 }
 #cc{
     margin-bottom: 0px;
 }
 a{
     text-decoration: none;
+}
+#aboutus{
+    padding-bottom: 40px;
 }
 
 
