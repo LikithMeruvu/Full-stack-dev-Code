@@ -2,6 +2,7 @@
     background-color:#fff396;
     text-align: center;
     padding-bottom: 10%;
+    overflow:hidden;
 }
 body{
     font-family: 'Chau Philomene One', sans-serif;
@@ -35,12 +36,26 @@ li{
  }
  @media (max-width:1200px){
     .rotated1{
-        transform:rotate(15deg);
-        /* padding-right: 60px; */
-        padding-left:40px;
+        transform:rotate(0);
         position:static;
+        height:450px;
+        width:350px;
      }
  }
+ /* @media (max-width:800px){
+    #a1{
+        padding-left:0px;
+     }
+ } */
+ /* @media (max-width:800px){
+    .rotated1{
+        transform:rotate(0);
+        position:static;
+        height:450px;
+        width:350px;
+        margin-right: 50px;
+     }
+ } */
 .nav-link:hover{
     font-size:20px;
     color:rgb(118, 118, 118);
@@ -48,7 +63,7 @@ li{
 #a1{
     text-align:center;
     padding-top: 40px;
-    padding-left: 60px;
+    padding-left: 20px;
 }
 .windows{
     display:inline-block;
