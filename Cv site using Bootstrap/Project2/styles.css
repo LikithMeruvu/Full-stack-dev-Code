@@ -26,7 +26,6 @@ li{
     font-size:20px;
     color:black;
 }
-
 .rotated1{
     transform:rotate(-15deg);
     /* padding-right: 60px; */
@@ -74,7 +73,6 @@ li{
     padding:7% 15%;
 }
 #testimonials{
-    
     text-align: center;
     background-color:#fff396;
 }
@@ -149,7 +147,6 @@ li{
     padding-left:0px;
     padding-right: 24px;
 }
-
 .price-card{
     padding:4% 2%;
     text-align: center;
@@ -163,7 +160,6 @@ li{
     text-align: center;
     background-color: #fff396;
 } */
-
 #contact-me{
     padding-top: 5%;
     margin:1%;
@@ -195,8 +191,6 @@ a{
 #aboutus{
     padding-bottom: 40px;
 }
-
-
 /* @recycle-bin */
 
 /* .btn-primary{
