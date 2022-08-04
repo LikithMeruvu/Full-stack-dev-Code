@@ -9,5 +9,4 @@ function sum(a){
     }
     return count;
 }
-
 // function to calculate the sum of the factors of the given numbers in specific limit 
