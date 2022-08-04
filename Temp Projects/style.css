@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+body {
+  background: url('images/black-black-and-white-anonymous-hackers-wallpaper-preview.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@media(max-width:867px) {
+  body {
+   background:#000000;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Merriweather', serif;
+  }
+}
+
+body {
+  font-family: 'Merriweather', serif;
+}
+
+.neon {
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px rgb(169, 159, 159),
+    0 0 21px rgb(118, 113, 113),
+    0 0 42px rgb(0, 0, 0),
+    0 0 82px rgb(61, 104, 90),
+    0 0 92px rgb(14, 21, 19),
+    0 0 102px rgb(11, 16, 15),
+    0 0 151px rgb(38, 59, 52);
+  font-size: 50px;
+  letter-spacing: 5px;
+  padding: 0% 3%;
+  margin: 0%;
+}
+
+.neon1 {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px rgb(113, 110, 110),
+    0 0 20px rgb(128, 119, 119),
+    0 0 40px rgb(25, 37, 37),
+    0 0 80px rgb(43, 66, 66),
+    0 0 90px rgb(24, 32, 32),
+    0 0 100px rgb(40, 67, 67),
+    0 0 150px rgb(4, 96, 96);
+  font-size: 30px;
+  padding: 0% 3%;
+  margin: 0%;
+}
+
+.container h1 {
+  display: inline-block;
+  text-align: center;
+  padding: 2% 2% 0%;
+}
+
+.container h3 {
+  display: block;
+  /* text-align:center; */
+  padding: 0.5% 2% 0%;
+}
+
+.container1 {
+  margin: 4% 20% 10% 2%;
+  padding: 2% 7% 4%;
+  color: #fff;
+  display: inline-block;
+  border-radius: 10px;
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px rgb(113, 110, 110),
+    0 0 20px rgb(128, 119, 119),
+    0 0 40px rgb(25, 37, 37),
+    0 0 80px rgb(43, 66, 66),
+    0 0 90px rgb(24, 32, 32),
+    0 0 100px rgb(40, 67, 67),
+    0 0 150px rgb(4, 96, 96);
+}
+
+#per {
+  margin-bottom: 47px;
+  margin-top: 0px;
+}
+
+.form input {
+  font-size: 30px;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(42, 42, 42);
+  text-shadow:
+    0 0 5px rgb(171, 234, 180),
+    0 0 10px rgb(137, 191, 104),
+    0 0 20px rgb(65, 148, 90),
+    0 0 40px rgb(238, 237, 244),
+    0 0 80px rgb(231, 255, 232),
+    0 0 90px rgb(242, 255, 244),
+    0 0 100px rgb(235, 235, 235),
+    0 0 150px rgb(174, 180, 180);
+}
+
+.container1 {
+  border: 2px solid white;
+  text-align: center;
+}
+
+.container1 h3 {
+  font-size: 30px;
+  text-align: center;
+  margin: 12px;
+}
+
+.btn {
+  text-align: center;
+  font-size: 30px;
+  margin-top:10px;
+  padding: 10px 10px;
+  font-family: 'Merriweather', serif;
+  display: inline-block;
+  color: #000000;
+  letter-spacing: 2px;
+  border-radius:20px;
+  /* text-transform: uppercase; */
+  /* text-decoration: none; */
+  /* font-size: 3em; */
+  overflow: hidden;
+}
+
+.btn:hover {
+  color: rgb(0, 0, 0);
+  background: #fdfffd;
+  box-shadow: 0 0 25px #fefffe;
+}
