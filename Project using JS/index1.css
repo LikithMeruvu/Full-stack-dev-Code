@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+body{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-size: cover;
+    color:white;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* The Heading Section */
+.head{
+    display:flex;
+    text-align:center;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-size: cover;
+    color:white;
+    padding: 7px;
+    font-family: 'Oswald', sans-serif;
+}
+.head h1{
+    margin:auto 36%;
+}
+.head .fa{
+    margin:1% 1%;
+}
+
+/* intro Section */
+.names{
+    text-align:center;
+    color:white;
+    margin-bottom:2%;
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    /* border: 1px solid white;
+    border-radius:10px; */
+}
+
+.names h3{
+    margin-left:13%;
+    margin-right:2%;
+}
+.names input{
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+.names .btn{
+    margin-left:3%;
+}
+.namebox{
+    text-align: center;
+    margin-bottom:4%;
+}
+
+.intro{
+    display:flex;
+    justify-content:center;
+    /* background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-size: cover; */
+    color:white;
+    padding: 7px;
+    font-family: 'Oswald', sans-serif;
+    margin:5% 0%;
+    font-size: 1.5rem;
+}
+.intro .btn{
+    margin-left :50px;
+}
+
+/* second heading */
+.whichGame{
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    text-align:center;
+}
+
+/* game Section */
+@media (max-width: 1000px){
+    .card{
+        margin:2% 0%;
+    }
+}
+
+.row {
+    text-align:center;
+    padding:4% 8%;
+    line-height: 1.5;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+.click{
+    margin:5% 1%;
+}
+.click img{
+    margin:0% 4%;
+}

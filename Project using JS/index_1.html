@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DICE GAME</title>
+    <link rel="stylesheet" href="index1.css" />
+    <link rel="favicon" href="" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Heading -->
+    <div class="container-fluid head">
+        <i class="fa fa-3x fa-dice" height="48px" width="48px"></i>
+        <h1>Dice game</h1>
+    </div>
+
+    <!-- Intro -->
+    <div class="container-fluid intro">
+        <h1>Choose number of players</h1>
+        <div class="dropdown">
+            <button class="btn btn-outline-light btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Players
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">2 Player</a></li>
+                <li><a class="dropdown-item" href="index_1.html">4 Players</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="namebox">
+        <div class="container-fluid names">
+            <h3>First Player Name:</h3>
+            <input type="text" spellcheck="false" placeholder="enter name here" id="first" />
+            <h3>Second Player Name:</h3>
+            <input type="text" spellcheck="false" placeholder="enter name here" id="second" />
+        </div>
+        <!-- <button class="btn btn-outline-light btn-lg" onclick="addNames()">
+            Submit
+        </button> -->
+        <div class="container-fluid names">
+            <h3>Third Player Name:</h3>
+            <input type="text" spellcheck="false" placeholder="enter name here" id="third" />
+            <h3>Fourth Player Name:</h3>
+            <input type="text" spellcheck="false" placeholder="enter name here" id="fourth" />
+        </div>
+        <button class="btn btn-outline-light btn-lg namebtn" style="font-family: 'Oswald', sans-serif;" onclick="addNames()">
+            Submit
+        </button>
+    </div>
+    <h1 class="whichGame">FOUR PLAYERS GAME</h1>
+    <h3 class="whichGame">Player with higher score wins (3 Dice Rolls)</h3>
+
+    <div class="row">
+        <div class="price-card col-sm-12 col-lg-6">
+            <div class="card">
+                <div class="card-header p1">
+                    <h3>Player One</h3>
+                </div>
+                <div class="card-body">
+                    <h2>Click to Roll Dice</h2>
+
+                    <div class="click">
+                        <img src="images/hand-point-right-solid.svg" height="48px" width="48px" />
+                        <img src="images/dice-six-solid.svg" alt="" style="cursor: pointer" height="48px"
+                            width="48px" />
+                        <img src="images/hand-point-left-solid.svg" height="48px" width="48px" />
+                    </div>
+
+                    <p>You Got Number <span id="number">num</span></p>
+                    <p>Only <span id="try">num1 </span>chances Left</p>
+                    <div class="d-grid gap-2">
+                        <button type="button" class="btn btn-lg btn-block btn-outline-primary">
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="price-card col-sm-12 col-lg-6">
+            <div class="card">
+                <div class="card-header p2">
+                    <h3>Player Two</h3>
+                </div>
+                <div class="card-body">
+                    <h2>Click to Roll Dice</h2>
+
+                    <div class="click">
+                        <img src="images/hand-point-right-solid.svg" height="48px" width="48px" />
+                        <img src="images/dice-six-solid.svg" alt="" style="cursor: pointer" height="48px"
+                            width="48px" />
+                        <img src="images/hand-point-left-solid.svg" height="48px" width="48px" />
+                    </div>
+
+                    <p>You Got Number <span id="number">num</span></p>
+                    <p>Only <span id="try">num1 </span>chances Left</p>
+                    <div class="d-grid gap-2">
+                        <button type="button" class="btn btn-lg btn-block btn-outline-primary">
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <h1></h1>
+        <div class="price-card col-sm-12 col-lg-6">
+            <div class="card">
+                <div class="card-header p3">
+                    <h3>Player Three</h3>
+                </div>
+                <div class="card-body">
+                    <h2>Click to Roll Dice</h2>
+
+                    <div class="click">
+                        <img src="images/hand-point-right-solid.svg" height="48px" width="48px" />
+                        <img src="images/dice-six-solid.svg" alt="" style="cursor: pointer" height="48px"
+                            width="48px" />
+                        <img src="images/hand-point-left-solid.svg" height="48px" width="48px" />
+                    </div>
+
+                    <p>You Got Number <span id="number">num</span></p>
+                    <p>Only <span id="try">num1 </span>chances Left</p>
+                    <div class="d-grid gap-2">
+                        <button type="button" class="btn btn-lg btn-block btn-outline-primary">
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="price-card col-sm-12 col-lg-6">
+            <div class="card">
+                <div class="card-header p4">
+                    <h3>Player Four</h3>
+                </div>
+                <div class="card-body">
+                    <h2>Click to Roll Dice</h2>
+
+                    <div class="click">
+                        <img src="images/hand-point-right-solid.svg" height="48px" width="48px" />
+                        <img src="images/dice-six-solid.svg" alt="" style="cursor: pointer" height="48px"
+                            width="48px" />
+                        <img src="images/hand-point-left-solid.svg" height="48px" width="48px" />
+                    </div>
+
+                    <p>You Got Number <span id="number">num</span></p>
+                    <p>Only <span id="try">num1 </span>chances Left</p>
+                    <div class="d-grid gap-2">
+                        <button type="button" class="btn btn-lg btn-block btn-outline-primary">
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="index1.js"></script>
+    <script src="https://example.com/fontawesome/v6.1.2/js/all.js" data-auto-replace-svg="nest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
