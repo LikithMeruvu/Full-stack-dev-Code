@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DICE GAME</title>
     <link rel="stylesheet" href="index1.css" />
-    <link rel="favicon" href="" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
 
@@ -33,37 +33,48 @@
         <div class="dropdown">
             <button class="btn btn-outline-light btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                Players
+                SELECT
             </button>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="index.html">2 Player</a></li>
-                <li><a class="dropdown-item" href="index_1.html">4 Players</a></li>
+                <li><a class="dropdown-item" href="index.html">2 PLAYERS</a></li>
+                <li><a class="dropdown-item" href="index_1.html">4 PLAYERS</a></li>
             </ul>
         </div>
     </div>
 
     <div class="namebox">
-        <div class="container-fluid names">
-            <h3>First Player Name:</h3>
-            <input type="text" spellcheck="false" placeholder="enter name here" id="first" />
-            <h3>Second Player Name:</h3>
-            <input type="text" spellcheck="false" placeholder="enter name here" id="second" />
-        </div>
-        <!-- <button class="btn btn-outline-light btn-lg" onclick="addNames()">
+        <div class="row" id="nameboxoutline">
+            <div class="container-fluid names col-md-6 col-sm-12">
+                <h3>First Player Name:</h3>
+                <input type="text" spellcheck="false" placeholder="enter name here" id="first" />
+                <h3>Second Player Name:</h3>
+                <input type="text" spellcheck="false" placeholder="enter name here" id="second" />
+            </div>
+            <!-- <button class="btn btn-outline-light btn-lg" onclick="addNames()">
             Submit
         </button> -->
-        <div class="container-fluid names">
-            <h3>Third Player Name:</h3>
-            <input type="text" spellcheck="false" placeholder="enter name here" id="third" />
-            <h3>Fourth Player Name:</h3>
-            <input type="text" spellcheck="false" placeholder="enter name here" id="fourth" />
+            <div class="container-fluid names col-md-6 col-sm-12">
+                <h3>Third Player Name:</h3>
+                <input type="text" spellcheck="false" placeholder="enter name here" id="third" />
+                <h3>Fourth Player Name:</h3>
+                <input type="text" spellcheck="false" placeholder="enter name here" id="fourth" />
+            </div>
+            <div class="container-fluid names">
+                <button class="btn btn-outline-light btn-lg namebtn" style="font-family: 'Oswald', sans-serif;"
+                    onclick="addNames()">
+                    Submit
+                </button>
+            </div>
         </div>
-        <button class="btn btn-outline-light btn-lg namebtn" style="font-family: 'Oswald', sans-serif;" onclick="addNames()">
-            Submit
-        </button>
     </div>
+
+
+
     <h1 class="whichGame">FOUR PLAYERS GAME</h1>
     <h3 class="whichGame">Player with higher score wins (3 Dice Rolls)</h3>
+
+    <h1 id="winName" style="text-align: center;color: white;font-family: 'Oswald', sans-serif;margin-top: 13px;"></h1>
+
 
     <div class="row">
         <div class="price-card col-sm-12 col-lg-6">
@@ -76,16 +87,16 @@
 
                     <div class="click">
                         <img src="images/hand-point-right-solid.svg" height="48px" width="48px" />
-                        <img src="images/dice-six-solid.svg" alt="" style="cursor: pointer" height="48px"
-                            width="48px" />
+                        <img src="images/dice-six-solid.svg" alt="" style="cursor: pointer" id="i1" height="48px"
+                            width="48px" onclick="rollDice(); info();" />
                         <img src="images/hand-point-left-solid.svg" height="48px" width="48px" />
                     </div>
 
-                    <p>You Got Number <span id="number">num</span></p>
-                    <p>Only <span id="try">num1 </span>chances Left</p>
+                    <p id="info1">Roll Only Three Times</p>
                     <div class="d-grid gap-2">
-                        <button type="button" class="btn btn-lg btn-block btn-outline-primary">
-                            Sign Up
+                        <button type="button" class="btn btn-lg btn-block btn-outline-primary pl1 scoreP1"
+                            onclick="scoreP1();">
+                            Total Score
                         </button>
                     </div>
                 </div>
@@ -102,16 +113,16 @@
 
                     <div class="click">
                         <img src="images/hand-point-right-solid.svg" height="48px" width="48px" />
-                        <img src="images/dice-six-solid.svg" alt="" style="cursor: pointer" height="48px"
-                            width="48px" />
+                        <img src="images/dice-six-solid.svg" alt="" style="cursor:pointer" id="i2" height="48px"
+                            width="48px" onclick="rollDice1(); info1();" />
                         <img src="images/hand-point-left-solid.svg" height="48px" width="48px" />
                     </div>
 
-                    <p>You Got Number <span id="number">num</span></p>
-                    <p>Only <span id="try">num1 </span>chances Left</p>
+                    <p id="info2">Roll Only Three Times</p>
                     <div class="d-grid gap-2">
-                        <button type="button" class="btn btn-lg btn-block btn-outline-primary">
-                            Sign Up
+                        <button type="button" class="btn btn-lg btn-block btn-outline-primary pl2 scoreP2"
+                            onclick="scoreP2();">
+                            Total Score
                         </button>
                     </div>
                 </div>
@@ -129,16 +140,16 @@
 
                     <div class="click">
                         <img src="images/hand-point-right-solid.svg" height="48px" width="48px" />
-                        <img src="images/dice-six-solid.svg" alt="" style="cursor: pointer" height="48px"
-                            width="48px" />
+                        <img src="images/dice-six-solid.svg" alt="" style="cursor: pointer" id="i3" height="48px"
+                            width="48px" onclick="rollDice2(); info2();" />
                         <img src="images/hand-point-left-solid.svg" height="48px" width="48px" />
                     </div>
 
-                    <p>You Got Number <span id="number">num</span></p>
-                    <p>Only <span id="try">num1 </span>chances Left</p>
+                    <p id="info3">Roll Only Three Times</p>
                     <div class="d-grid gap-2">
-                        <button type="button" class="btn btn-lg btn-block btn-outline-primary">
-                            Sign Up
+                        <button type="button" class="btn btn-lg btn-block btn-outline-primary pl3 scoreP3"
+                            onclick="scoreP3();">
+                            Total Score
                         </button>
                     </div>
                 </div>
@@ -155,16 +166,16 @@
 
                     <div class="click">
                         <img src="images/hand-point-right-solid.svg" height="48px" width="48px" />
-                        <img src="images/dice-six-solid.svg" alt="" style="cursor: pointer" height="48px"
-                            width="48px" />
+                        <img src="images/dice-six-solid.svg" alt="" style="cursor: pointer" id="i4" height="48px"
+                            width="48px" onclick="rollDice3(); info3(); winner();" />
                         <img src="images/hand-point-left-solid.svg" height="48px" width="48px" />
                     </div>
 
-                    <p>You Got Number <span id="number">num</span></p>
-                    <p>Only <span id="try">num1 </span>chances Left</p>
+                    <p id="info4">Roll Only Three Times</p>
                     <div class="d-grid gap-2">
-                        <button type="button" class="btn btn-lg btn-block btn-outline-primary">
-                            Sign Up
+                        <button type="button" class="btn btn-lg btn-block btn-outline-primary pl4 scoreP4"
+                            onclick="scoreP4();">
+                            Total Score
                         </button>
                     </div>
                 </div>

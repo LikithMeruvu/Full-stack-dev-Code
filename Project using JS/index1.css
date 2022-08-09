@@ -24,31 +24,34 @@ body{
 }
 
 /* intro Section */
+
 .names{
     text-align:center;
     color:white;
-    margin-bottom:2%;
-    display: flex;
+    margin-bottom:1%;
+    /* display: flex; */
     font-family: 'Oswald', sans-serif;
-    /* border: 1px solid white;
-    border-radius:10px; */
 }
+.namesborder{
+    border:1px solid #fff;
+    margin:2% 30%;
+    border-radius: 20px;
+    padding:2% 0%;
+}
+/* .names h3{
+    /* margin-left:10%;
+    margin-right:1%;
+ } */
 
-.names h3{
-    margin-left:13%;
-    margin-right:2%;
-}
 .names input{
     border-radius: 10px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    margin-top:2%;
+    margin-bottom:10%;
 }
 .names .btn{
-    margin-left:3%;
-}
-.namebox{
-    text-align: center;
-    margin-bottom:4%;
+    margin-left:0%;
 }
 
 .intro{
@@ -59,7 +62,7 @@ body{
     color:white;
     padding: 7px;
     font-family: 'Oswald', sans-serif;
-    margin:5% 0%;
+    margin:3% 0% 2%;
     font-size: 1.5rem;
 }
 .intro .btn{
@@ -80,9 +83,21 @@ body{
     }
 }
 
+.namebox{
+    text-align:center;
+    padding:2% 24% 1%;
+    line-height: 1.5;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+
+}
+#nameboxoutline{
+    border:1px solid #fff;
+    border-radius: 20px;
+}
 .row {
     text-align:center;
-    padding:4% 8%;
+    padding:2% 8% 1%;
     line-height: 1.5;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
@@ -92,4 +107,25 @@ body{
 }
 .click img{
     margin:0% 4%;
+}
+
+/* media querys */
+
+@media (max-width: 1000px) {
+    .names{
+        font-size: 20px;
+    }
+    .namesborder{
+        border:1px solid #fff;
+        margin:2% 10%;
+        border-radius: 20px;
+        padding:2% 0%;
+    }
+    .names input{
+        border-radius: 10px;
+        text-align: center;
+        font-size: 1rem;
+        margin-top:2%;
+        margin-bottom:10%;
+    }
 }
