@@ -109,7 +109,6 @@ function ismax(a,b,c,d){
     return false;
 }
 
-
 let chance = 3;
 
 function info(){
