@@ -125,7 +125,15 @@ body{
         border-radius: 10px;
         text-align: center;
         font-size: 1rem;
-        margin-top:2%;
+        margin-top:1.5%;
         margin-bottom:10%;
+    }
+    .namebox{
+        text-align:center;
+        padding:2% 10% 1%;
+        line-height: 1.5;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;
+    
     }
 }

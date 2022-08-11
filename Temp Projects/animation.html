@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: red;
+            padding:5% 5%;
+            display:flex;
+            text-align:center;
+            justify-content:center;
+        }
+        .box{
+            background-color: green;
+            color:white;
+            height:200px;
+            width: 200px;
+            display:flex;
+            text-align:center;
+            justify-content:center;
+            margin:1% 5%;
+        }
+        .box:hover{
+           animation-name: hello;
+           animation-duration: 2s;
+           animation-play-state:unset;
+           /* animation-delay: 0.5s; */
+           
+        }
+        @keyframes hello {
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: blue;
+                height: 230px;
+                width: 230px;
+                border-radius: 20px;
+                position: relative;
+                top:200px;
+                left:200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>hello world</h3>
+        </div>
+        <div class="box">
+            <h3>hello world</h3>
+        </div>
+        <div class="box">
+            <h3>hello world</h3>
+        </div>
+    </div>
+</body>
+</html>
