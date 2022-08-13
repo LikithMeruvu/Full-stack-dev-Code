@@ -1,0 +1,27 @@
+/* .card-body{
+    display:block;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+*{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+.row{
+    margin:5% 3%;
+}
+.song {
+    text-align:center;
+    margin:5% 0%;
+}
+.control{
+    margin:5% 0%;
+}
+.control i{
+    margin:2% 3%;
+    cursor:pointer;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
