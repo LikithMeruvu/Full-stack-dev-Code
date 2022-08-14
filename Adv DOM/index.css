@@ -13,7 +13,7 @@
 }
 .song {
     text-align:center;
-    margin:5% 0%;
+    margin:3% 0%;
 }
 .control{
     margin:5% 0%;
@@ -24,4 +24,52 @@
 }
 .card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.btn :hover{
+    color:white;
+}
+.footer{
+    display:fixed;
+    bottom: 0;
+    background-color: black;
+    color:white;
+    padding:1% 25%;
+    /* bottom:0; */
+}
+.footer img{
+    margin-bottom: 10px;
+    float: left;
+}
+.footer input{
+    width:100%;
+}
+/* .footer h3{
+    display:inline-block;
+    margin-left: 3%;
+    text-align: center;
+} */
+
+@media (max-width: 868px){
+    .footer h3{
+        margin-left: 1%;
+    }
+}
+
+#ProgressBar{
+    cursor: pointer;
+}
+
+.fa-forward{
+    visibility: hidden;
+}
+.fa-backward{
+    visibility: hidden;
+}
+
+@media (max-width:868px){
+    h3.current{
+        font-size: 20px;
+        /* margin-left: 40px; */
+        display: flow-root;
+    }
 }
