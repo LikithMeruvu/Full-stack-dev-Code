@@ -29,11 +29,12 @@
     color:white;
 }
 .footer{
-    display:fixed;
+    position:fixed;
     bottom: 0;
     background-color: black;
     color:white;
     padding:1% 25%;
+    width:100%;
     /* bottom:0; */
 }
 .footer img{
