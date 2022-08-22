@@ -51,23 +51,23 @@
       padding: 2% 2%;
     }
 
-    .card h5{
-      margin:0% 0%;
+    .card h5 {
+      margin: 0% 0%;
     }
 
     @media (max-width:768px) {
       .video {
         filter: brightness(40%);
         width: 100%;
-        height: 680px;
+        height: 600px;
         object-fit: fill;
         z-index: -1;
       }
 
       .hero {
         position: absolute;
-        top: 40%;
-        left: 15%;
+        top: 30%;
+        left: 4%;
         text-align: center;
         color: white;
       }
@@ -79,7 +79,8 @@
       .hero h5 {
         font-size: 12px;
       }
-      h1{
+
+      h1 {
         font-size: 26px;
       }
 
@@ -132,18 +133,18 @@
 
   <section class="head">
     <video autoplay="true" loop="true" muted class="video">
-      <source src="images/istockphoto-1305960252-640_adpp_is.mp4" type="video/mp4">
+      <source src="videos/yoga.mp4" type="video/mp4">
       </source>
     </video>
   </section>
 
   <div class="hero">
     <h1>Start Your Yoga Journey</h1>
-    <h5>Follow The Daily Routine</h5>
+    <h5>Follow The Daily Routine For 30-Days</h5>
 
     <div class="start" style="text-align:center;">
-      <button class="btn btn-outline-light btn-lg"><a href="#yoga" style="text-decoration:none; color:inherit;">Start
-          Now</a></button>
+      <button class="btn btn-outline-light btn-lg"><a href="#yoga" style="text-decoration:none; color:inherit; margin-right:10px;">Beginner Yoga</a></button>
+      <button class="btn btn-outline-light btn-lg"><a href="#yoga1" style="text-decoration:none; color:inherit; margin-right:10px;">Advanced Yoga</a></button>
     </div>
 
     <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="offcanvas"
@@ -168,9 +169,14 @@
       </button>
       <div class="collapse" id="collapseExample">
         <div class="card card-body">
-          <p style="font-weight:bold;">The complete Yoga guide for absolute beginners Click This Download button to get all video related content of all Poses and make sure that you do all poses for (30-45 seconds)/per Day for 30-days And After you can proceed for Advanced level Yoga</p>
+          <p style="font-weight:bold;">The complete Yoga guide for absolute beginners Click This Download button to get
+            all video related content of all Poses and make sure that you do all poses for (30-45 seconds)/per Day for
+            30-days And After you can proceed for Advanced level Yoga</p>
 
-          <button class="btn btn-outline-dark btn-block" style="width:100%; margin:1% 2%; font-weight:bold"><a href="https://drive.google.com/file/d/1CPvimbLqayLFTBjsQ131RL33q6XiNHt3/view?usp=drivesdk" download = "YogaBeginnersBundle" style="text-decoration: none; color:inherit;">Download Complete Zip File</a></button>
+          <button class="btn btn-outline-dark btn-block" style="width:100%; margin:1% 2%; font-weight:bold"><a
+              href="https://drive.google.com/file/d/1CPvimbLqayLFTBjsQ131RL33q6XiNHt3/view?usp=drivesdk"
+              download="YogaBeginnersBundle" style="text-decoration: none; color:inherit;">Download Complete Zip
+              File</a></button>
 
         </div>
       </div>
@@ -183,21 +189,26 @@
 
       <div class="collapse" id="collapseExample1">
         <div class="card card-body">
-          <p style="font-weight:bold;">The complete Yoga guide for Advanced level Yoga Click This Download button to get all video related content of all Poses and make sure that you do all poses for (45 - 60 seconds)/per Day for 30-days for deserved results</p>
+          <p style="font-weight:bold;">The complete Yoga guide for Advanced level Yoga Click This Download button to get
+            all video related content of all Poses and make sure that you do all poses for (45 - 60 seconds)/per Day for
+            30-days for deserved results</p>
 
-          <button class="btn btn-outline-dark btn-block" style="width:100%; margin:1% 2%; font-weight:bold"><a href="https://drive.google.com/file/d/1CS_gUQscOKKb-tkrQ3iJ1_S3l9q1ngKn/view?usp=drivesdk" download = "YogaAdvancedBundle" style="text-decoration: none; color:inherit;">Download Complete Zip File</a></button>
+          <button class="btn btn-outline-dark btn-block" style="width:100%; margin:1% 2%; font-weight:bold"><a
+              href="https://drive.google.com/file/d/1CS_gUQscOKKb-tkrQ3iJ1_S3l9q1ngKn/view?usp=drivesdk"
+              download="YogaAdvancedBundle" style="text-decoration: none; color:inherit;">Download Complete Zip
+              File</a></button>
         </div>
       </div>
 
-      
+
 
     </div>
   </div>
 
   <!-- yoga beginners section -->
 
-  
-  <section id="yoga">
+
+  <section id="yoga" style="background-color:#F5EDED;">
     <h1 style="text-align:center; margin:4% 0%;">Beginner Level Yoga <br>(Practice all Poses 30 - 45 Seconds daily)</h1>
     <div class="row">
       <div class="col-md-4 col-sm-12">
@@ -210,9 +221,9 @@
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe> -->
-              <video width="100%" height="350" controls>
-                <source src="videos/yoga-beginners/1.mp4" type="video/mp4">
-              </video>
+            <video width="100%" height="350" controls id="1">
+              <source src="videos/yoga-beginners/1.mp4" type="video/mp4">
+            </video>
 
             <h5>Benefits: This pose helps regulate blood circulation in pelvic area and aids in digestion.</h5>
           </div>
@@ -225,7 +236,7 @@
           </div>
           <div class="card-body">
             <!-- <iframe width="100%" height="345px" src="https://www.youtube.com/embed/7WroUo8ESjQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <video width="100%" height="382" controls>
+            <video width="100%" height="382" controls id="2">
               <source src="videos/yoga-beginners/2.mp4" type="video/mp4">
             </video>
 
@@ -240,7 +251,7 @@
           </div>
           <div class="card-body">
             <!-- <iframe width="100%" height="345" src="https://www.youtube.com/embed/WOmwRyHehAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <video width="100%" height="382" controls>
+            <video width="100%" height="382" controls id="3">
               <source src="videos/yoga-beginners/3.mp4" type="video/mp4">
             </video>
 
@@ -255,7 +266,7 @@
           </div>
           <div class="card-body">
             <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/0wutbP6G3JQ?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <video width="100%" height="350" controls>
+            <video width="100%" height="350" controls id="4">
               <source src="videos/yoga-beginners/4.mp4" type="video/mp4">
             </video>
 
@@ -266,11 +277,11 @@
       <div class="col-md-4 col-sm-12">
         <div class="card" id="1">
           <div class="card-head">
-            <h3>5. Corpse pose  (Shavasana) </h3>
+            <h3>5. Corpse pose (Shavasana) </h3>
           </div>
           <div class="card-body">
             <!-- <iframe width="100%" height="325" src="https://www.youtube.com/embed/1VYlOKUdylM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <video width="100%" height="360" controls>
+            <video width="100%" height="360" controls id="5">
               <source src="videos/yoga-beginners/5.mp4" type="video/mp4">
             </video>
 
@@ -285,7 +296,7 @@
           </div>
           <div class="card-body">
             <!-- <iframe width="100%" height="350" src="https://www.youtube.com/embed/MWoteoYYCVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <video width="100%" height="380" controls>
+            <video width="100%" height="380" controls id="6">
               <source src="videos/yoga-beginners/6.mp4" type="video/mp4">
             </video>
 
@@ -300,11 +311,12 @@
           </div>
           <div class="card-body">
             <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/t15nG-gf2Ow?start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <video width="100%" height="300" controls>
+            <video width="100%" height="300" controls id="7">
               <source src="videos/yoga-beginners/7.mp4" type="video/mp4">
             </video>
 
-          <h5>Benefits: This pose helps with many issues which includes relieving the symptoms of menopause and menstrual discomfort.</h5>
+            <h5>Benefits: This pose helps with many issues which includes relieving the symptoms of menopause and
+              menstrual discomfort.</h5>
           </div>
         </div>
       </div>
@@ -315,7 +327,7 @@
           </div>
           <div class="card-body">
             <!-- <iframe width="100%" height="372" src="https://www.youtube.com/embed/_1124fj0BeQ?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <video width="100%" height="350" controls>
+            <video width="100%" height="350" controls id="8">
               <source src="videos/yoga-beginners/8.mp4" type="video/mp4">
             </video>
 
@@ -330,7 +342,7 @@
           </div>
           <div class="card-body">
             <!-- <iframe width="100%" height="372" src="https://www.youtube.com/embed/qCgodfzkPBM?start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <video width="100%" height="350" controls>
+            <video width="100%" height="350" controls id="9">
               <source src="videos/yoga-beginners/9.mp4" type="video/mp4">
             </video>
 
@@ -345,7 +357,7 @@
           </div>
           <div class="card-body">
             <!-- <iframe width="100%" height="372" src="https://www.youtube.com/embed/qYvYsFrTI0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <video width="100%" height="370" controls>
+            <video width="100%" height="370" controls id="10">
               <source src="videos/yoga-beginners/10.mp4" type="video/mp4">
             </video>
 
@@ -360,7 +372,7 @@
           </div>
           <div class="card-body">
             <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/p7lLJRXevcc?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <video width="100%" height="320" controls>
+            <video width="100%" height="320" controls id="11">
               <source src="videos/yoga-beginners/11.mp4" type="video/mp4">
             </video>
 
@@ -375,7 +387,7 @@
           </div>
           <div class="card-body">
             <!-- <iframe width="100%" height="340" src="https://www.youtube.com/embed/s888DrdU_Gw?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <video width="100%" height="350" controls>
+            <video width="100%" height="350" controls id="12">
               <source src="videos/yoga-beginners/12.mp4" type="video/mp4">
             </video>
 
@@ -388,8 +400,9 @@
 
 
 
-  <section id="yoga1">
-    <h1 style="text-align:center; margin:4% 0%;">Advanced Level Yoga <br>(Practice all Poses 45 - 60 Seconds daily)</h1>
+  <section id="yoga1" style="background-color: #EEEEEE;">
+    <h1 style="text-align:center; margin:4% 0%;">Advanced Level Yoga <br>(Practice all Poses 60 - 120 Seconds daily)
+    </h1>
     <div class="row">
       <div class="col-md-4 col-sm-12">
         <div class="card" id="1">
@@ -402,7 +415,8 @@
               <source src="videos/yoga-advanced/1.mp4" type="video/mp4">
             </video>
 
-            <h5>Benefits: Boat pose strengthens the core muscles from hip flexors to the spinal column and everything in between. It's also a great way to start creating inner heat</h5>
+            <h5>Benefits: Boat pose strengthens the core muscles from hip flexors to the spinal column and everything in
+              between. It's also a great way to start creating inner heat</h5>
           </div>
         </div>
       </div>
@@ -417,7 +431,8 @@
               <source src="videos/yoga-advanced/2.mp4" type="video/mp4">
             </video>
 
-            <h5>Benefits: Eagle pose, or Garudasana, is a great pose to find confidence in your balance. It's also a wonderful counter option to many of your typical yoga poses.</h5>
+            <h5>Benefits: Eagle pose, or Garudasana, is a great pose to find confidence in your balance. It's also a
+              wonderful counter option to many of your typical yoga poses.</h5>
           </div>
         </div>
       </div>
@@ -432,7 +447,8 @@
               <source src="videos/yoga-advanced/3.mp4" type="video/mp4">
             </video>
 
-            <h5>Benefits: you will experience an even greater sense of concentrated focus that happens especially when we do balancing postures.</h5>
+            <h5>Benefits: you will experience an even greater sense of concentrated focus that happens especially when
+              we do balancing postures.</h5>
           </div>
         </div>
       </div>
@@ -447,7 +463,8 @@
               <source src="videos/yoga-advanced/4.mp4" type="video/mp4">
             </video>
 
-            <h5>Benefits: You'll gain core strength, open your shoulders, and find the ability to maintain your concentration.</h5>
+            <h5>Benefits: You'll gain core strength, open your shoulders, and find the ability to maintain your
+              concentration.</h5>
           </div>
         </div>
       </div>
@@ -492,7 +509,8 @@
               <source src="videos/yoga-advanced/7.mp4" type="video/mp4">
             </video>
 
-          <h5>Benefits: Builds healthy triceps and rhomboids, the muscles on the backs of your arms and between your shoulder blades.</h5>
+            <h5>Benefits: Builds healthy triceps and rhomboids, the muscles on the backs of your arms and between your
+              shoulder blades.</h5>
           </div>
         </div>
       </div>
@@ -507,7 +525,8 @@
               <source src="videos/yoga-advanced/8.mp4" type="video/mp4">
             </video>
 
-            <h5>Benefits: Strengthens the entire back chain of muscles: hamstrings, gluteus, spinal extensors, and rhomboids.</h5>
+            <h5>Benefits: Strengthens the entire back chain of muscles: hamstrings, gluteus, spinal extensors, and
+              rhomboids.</h5>
           </div>
         </div>
       </div>
@@ -537,11 +556,12 @@
               <source src="videos/yoga-advanced/10.mp4" type="video/mp4">
             </video>
 
-            <h5>Benefits: Strengthens the quadriceps and releases the neck and shoulders Counterpose for wrists and back.</h5>
+            <h5>Benefits: Strengthens the quadriceps and releases the neck and shoulders Counterpose for wrists and
+              back.</h5>
           </div>
         </div>
       </div>
-      
+
     </div>
   </section>
 
@@ -552,7 +572,29 @@
 </body>
 
 </html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
+<script>
 
+  $(document).ready(function () {
+    var videos = document.querySelectorAll('video');
+
+    function pauseAll(elem) {
+      for (var i = 0; i < videos.length; i++) {
+        //Is this the one we want to play?
+        if (videos[i] == elem) continue;
+        //Have we already played it && is it already paused?
+        if (videos[i].played.length > 0 && !videos[i].paused) {
+          // Then pause it now
+          videos[i].pause();
+        }
+      }
+    }
+
+    for (var i = 0; i < videos.length; i++)
+      videos[i].addEventListener('play', function () { pauseAll(this) }, true);
+  })
+
+</script>
