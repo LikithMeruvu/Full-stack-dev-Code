@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Checkups</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    * {
+      font-family: var(--font);
+    }
+
+    html {
+      margin: 0px;
+      overflow: hidden;
+      overflow-y: scroll;
+      font-family: var(--font);
+    }
+
+    .hero {
+      position: absolute;
+      top: 50%;
+      left: 33%;
+      text-align: center;
+      color: white;
+    }
+
+    .hero button {
+      margin: 4% 0%;
+    }
+
+    .video {
+      /* position: relative; */
+      filter: brightness(40%);
+      width: 100%;
+      height: 750px;
+      object-fit: fill;
+      z-index: -1;
+    }
+
+    /* .card {
+          text-align: center;
+          padding: 2% 2%;
+        }
+    
+        .card h5 {
+          margin: 0% 0%;
+        } */
+
+        .medi-intro{
+          text-align: center;
+        }
+    .intro img{
+      width: 70%;
+      /* margin: 4% 4% 0% 4%; */
+    }
+    /* .medi-intro h5{
+      margin:0% 8%;
+    } */
+
+    .medi-tips {
+      padding: 3% 8%;
+      text-align:center;
+    }
+
+    .req {
+      margin: 0% 30%;
+      text-align: left;
+      font-size: 1.5rem;
+    }
+
+    li {
+      margin: 1% 0%;
+    }
+
+    /* .req-li{
+      text-align: left;
+      font-size: 22px;
+    } */
+
+    @media (max-width:768px) {
+      .video {
+        filter: brightness(40%);
+        width: 100%;
+        height: 600px;
+        object-fit: fill;
+        z-index: -1;
+      }
+
+      .intro img {
+        margin-left: 0px;
+        width: 304px;
+        height: 281px;
+      }
+
+      .medi-tips img {
+        width: 304px;
+        height: 281px;
+      }
+
+      .hero {
+        position: absolute;
+        top: 30%;
+        left: 4%;
+        text-align: center;
+        color: white;
+      }
+
+      .req {
+        margin: 0% 7%;
+        text-align: left;
+        font-size: 1rem;
+      }
+
+      .hero h1 {
+        font-size: 24px;
+      }
+
+      .hero h5 {
+        font-size: 12px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- The header video pack -->
+  <div class="container">
+    <nav class="navbar fixed-top navbar-expand-lg bg-light navbar-light">
+      <a class="navbar-brand" href="#" style="margin-left: 20px">
+        <img src="images/d6b751d75c50b98be47a56bd11106334.jpg" alt="" width="50" height="44"
+          class="d-inline-block align-text-top" />
+      </a>
+      <div style="display: inline-block">Health Care Programs</div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ms-auto me-5">
+          <li class="nav-item">
+            <a href="index.html#slider" class="nav-link one non-active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#about" class="nav-link two non-active">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Health Care Programs
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="Yoga.html">Yoga</a></li>
+              <li><a class="dropdown-item" href="Meditation.html">Meditation</a></li>
+              <li><a class="dropdown-item" href="Exercises.html">Exercises</a></li>
+              <li><a class="dropdown-item active" href="#">Health Checkups</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="contact-us.html" class="nav-link four non-active">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+  <section class="head">
+    <video autoplay="true" loop="true" muted class="video">
+      <source src="videos/checkups.mp4" type="video/mp4">
+      </source>
+    </video>
+  </section>
+
+  <div class="hero">
+    <h1>Health Checkups</h1>
+    <h5>Most preferred health checkups for Men and Women</h5>
+
+    <div class="start" style="text-align:center;">
+      <button class="btn btn-outline-light btn-lg"><a href="#Men"
+          style="text-decoration:none; color:inherit; margin-right:10px;">Men Checkups</a></button>
+      <button class="btn btn-outline-light btn-lg"><a href="#Women"
+          style="text-decoration:none; color:inherit; margin-right:10px;">Women Checkups</a></button>
+      
+    </div>
+
+    <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" style="visibility: hidden;">Download Tutorial</button>
+  </div>
+
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+    aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Choose your Level</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <button class="btn btn-lg btn-block btn-outline-dark" style="width:100%; margin:3% 2%;" type="button"
+        data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+        aria-controls="collapseExample">
+        beginner Level
+      </button>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <p style="font-weight:bold;">The complete Yoga guide for absolute beginners Click This Download button to get
+            all video related content of all Poses and make sure that you do all poses for (30-45 seconds)/per Day for
+            30-days And After you can proceed for Advanced level Yoga</p>
+
+          <button class="btn btn-outline-dark btn-block" style="width:100%; margin:1% 2%; font-weight:bold"><a
+              href="https://drive.google.com/file/d/1CPvimbLqayLFTBjsQ131RL33q6XiNHt3/view?usp=drivesdk"
+              download="YogaBeginnersBundle" style="text-decoration: none; color:inherit;">Download Complete Zip
+              File</a></button>
+
+        </div>
+      </div>
+
+      <button class="btn btn-lg btn-block btn-outline-dark" style="width:100%; margin:3% 2%;" type="button"
+        data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false"
+        aria-controls="collapseExample">
+        Advanced Level
+      </button>
+
+      <div class="collapse" id="collapseExample1">
+        <div class="card card-body">
+          <p style="font-weight:bold;">The complete Yoga guide for Advanced level Yoga Click This Download button to get
+            all video related content of all Poses and make sure that you do all poses for (45 - 60 seconds)/per Day for
+            30-days for deserved results</p>
+
+          <button class="btn btn-outline-dark btn-block" style="width:100%; margin:1% 2%; font-weight:bold"><a
+              href="https://drive.google.com/file/d/1CS_gUQscOKKb-tkrQ3iJ1_S3l9q1ngKn/view?usp=drivesdk"
+              download="YogaAdvancedBundle" style="text-decoration: none; color:inherit;">Download Complete Zip
+              File</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- meditation Section and its content -->
+  <section id="intro">
+    <h1 style="text-align:center; margin:8% 0% 0%;">What is health Checkup why is it necessary ?<br>
+      <!-- <h3 style="text-align:center;">(follow this step by step tutorial)</h3> -->
+    </h1>
+    <div class="medi-tips intro">
+      <img src="checkups-imgs/c0.jpg" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">We do not understand the fact that performing regular health check-ups from young age can actually save many lives. Saving some bucks today by ignoring periodic check-ups, we increase the risk of occurrence of several health issues in future. Check Your Health Regularly. Money is not everything. Yes…without money we cannot survive.</h5>
+    </div>
+  </section>
+
+  <!-- tips to start meditation section -->
+  <h1 style="text-align:center;">Health Checkups for Mens</h1>
+  <section id="Men">
+    <div class="medi-tips">
+      <h2 style="text-align:center;">1. Physical Exam / Well Check </h2>
+      <img src="checkups-imgs/c1.jpg" width="100%" height="600" alt="">
+      <div style="text-align:center; margin:2% 4%;"><h5>A physical examination is a routine test your primary care provider (PCP) performs to check your overall health. A PCP may be a doctor, a nurse practitioner, or a physician assistant. The exam is also known as a wellness check. You don't have to be sick to request an exam.</h5></div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">2. Blood sugar</h2>
+      <img src="checkups-imgs/c2.jpg" width="100%" height="600" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">Keeping glucose levels in check is imperative to reduce risk of cardiac diseases. In the extreme, diabetes wears out nerves resulting into erectile dysfunction and kidney damage. Catching diabetes or signs of it early greatly increases your chances of going into remission or controlling it.</h5>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">3. Skin Test</h2>
+      <img src="checkups-imgs/c3.jpg" width="100%" height="600" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">Family history of cancer and heat exposure increase the risk of skin cancer. In 2010, the Centre for Disease Control reported that although melanin means less chance of getting skin cancer, 13% of black women and 9% of black men get at least one sunburn. Skin cancer can happen at any age.</h5>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">4. Prostate-Specific Antigen (PSA)</h2>
+      <img src="checkups-imgs/c4.jpg" width="100%" height="600" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">Statistics say that one in seven males develops prostate cancer. The PSA test involves blood level testing and is usually done along with Digital Rectal Exams (DREs) to detect this type of cancer. It is advisable to start checking as early as age 40 in cases where family history of the disease is unknown.</h5>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">5. Colonoscopy</h2>
+      <img src="checkups-imgs/c5.jpg" width="100%" height="600" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">
+        A colonoscopy test is done to rule out colon cancer and beyond the age of 50, it is a must because the risk increases with age. Risk factors also include a history of bowel inflammation and a diet high in animal fat.</h5>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">6. Blood pressure and cholesterol</h2>
+      <img src="checkups-imgs/c6.jpg" width="100%" height="600" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">If left unchecked, high blood pressure is the leading cause of strokes in men. High cholesterol does the same plus inducing heart attacks. Blood pressure tests include thorough examination and blood test, and are easily done at local pharmacies. From 20 years of age and above, a cholesterol check is recommended every three to five years.</h5>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">7. Echocardiogram</h2>
+      <img src="checkups-imgs/c7.jpg" width="100%" height="600" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">Simple testing of cholesterol and monitoring blood pressure, plus weight management, are enough to catch cardiac risks.
+        However, in the event of a family history of heart disease, an echocardiogram (heart stress test) can catch subtle but significant heart damage. If you are on treatment for elevated cholesterol and blood pressure, it is also recommended.</h5>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">8. TSH</h2>
+      <img src="checkups-imgs/c9.jpg" width="100%" height="600" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">Thyroid -Stimulating Hormone test is done to establish balance in thyroid release in the body. Thyroid helps the body regulate metabolism. An upset thyroid release (little or too much) leads to weight gain, fatigue, lethargy and exhaustion. Unfortunately, according to Schlachter, men consider these symptoms as normal experiences.</h5>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">9. Liver enzyme</h2>
+      <img src="checkups-imgs/c8.jpg" width="100%" height="600" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">This test is done as part of the blood work to access liver damage from unhealthy lifestyles like alcoholism, and drug use, among others. For men, these enzymes can run amok due to toxicities, inflammation, and obesity, among other risk factors.</h5>
+    </div>
+    <div class="medi-tips">
+      <h2 style="text-align:center;">10. Lung screening</h2>
+      <img src="checkups-imgs/c10.jpg" width="100%" height="600" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">Lung cancer is considered the most preventable of cancers. It is found in people who smoke 90% of the time. The 10% comprises people who are genetically at risk, passive smokers and those exposed to corrosive chemicals.
+        However, since its scanning is high in radiation, a chest scan is not recommended. This cancer is usually caught incidentally during scans for other reasons.</h5>
+    </div>
+
+  </section>
+
+
+  <h1 style="text-align:center;">Health Checkups for Womens</h1>
+  <section id="Women">
+    <div class="medi-tips">
+      <h2 style="text-align:center;">1. Mammogram</h2>
+      <img src="checkups-imgs/d1.jpg" width="100%" height="600" alt="">
+      <div style="text-align:center; margin:2% 4%;"><h5>A mammogram refers to an X-ray screening of the breast tissue and is considered one of the most important female health checkups. This is because, for women, the risk of developing breast cancer increases as they age, making it essential to detect the illness in its early stages. Women above the age of 45 are generally advised to have a mammogram once per year.</h5></div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">2. Pap Smear</h2>
+      <img src="checkups-imgs/d2.jpg" width="100%" height="600" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">Pap smears, a form of screening done to detect cervical cancer, are yet another essential form of health checkups for women. Most doctors recommend that women above the age of 21 should go for pap smears once in every three years. It also helps to have a specific women health insurance plan in place to be prepared for a variety of illnesses.</h5>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">3. Blood Pressure Screening</h2>
+      <img src="checkups-imgs/d3.jpg" width="100%" height="600" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">While blood pressure diseases are typically associated with men, women are just as likely to develop illnesses related to or induced by high blood pressure, such as hypertension, stroke, and kidney diseases. Women above the age of 20 are advised to have medical checkups for blood pressure once in every two years.</h5>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">4. Cholesterol Check Up</h2>
+      <img src="checkups-imgs/d4.jpg" width="100%" height="600" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">Similar to blood pressure tests, cholesterol tests should also be included in the essential list of health checkups for women, and are covered by most individual health insurance plans. This is particularly relevant for women who have a history of obesity or heart diseases in their families. Starting from age 20, cholesterol tests should be done every five years.</h5>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">5. Colonoscopy</h2>
+      <img src="checkups-imgs/d5.jpg" width="100%" height="600" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">
+        A colonoscopy test is done to rule out colon cancer and beyond the age of 50, it is a must because the risk increases with age. Risk factors also include a history of bowel inflammation and a diet high in animal fat.</h5>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">6. Screening for Bone Density</h2>
+      <img src="checkups-imgs/d6.jpg" width="100%" height="600" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">One of the most overlooked health screening tests that actually should be essential for all women is a medical checkup for bone density. This is to detect any early signs of developing osteoporosis, the risk for which increases significantly after the age of 65.</h5>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">7. Blood Sugar Test</h2>
+      <img src="checkups-imgs/d7.jpg" width="100%" height="600" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">Like the other lifestyle diseases mentioned above such as hypertension and heart disease, diabetes is also fairly common in middle-aged women. Most family health insurance plans cover blood sugar tests, and it is advised to have them done every 2-3 years, after the age of 45.</h5>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">8. Dermatological Tests</h2>
+      <img src="checkups-imgs/d8.jpg" width="100%" height="600" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">Unlike the diseases mentioned above, there is one disease that is more likely to develop in women under the age of 45 - melanoma, or skin cancer. In order to detect early signs of this illness, it is recommended to do regular dermatological screenings and do regular inspections of your skin at home.</h5>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">9. Hearing and Vision Tests</h2>
+      <img src="checkups-imgs/d9.jpg" width="100%" height="600" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">It is no secret that as the body ages, our essential senses such as seeing and hearing tend to weaken over time. Therefore, in order to catch any hearing and vision ailments early, it is recommended to have regular health screening tests and consult an expert physician as soon as any symptoms arise.</h5>
+    </div>
+    <div class="medi-tips">
+      <h2 style="text-align:center;">10. Dental Check Up</h2>
+      <img src="checkups-imgs/d10.jpg" width="100%" height="600" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">Regular visits to the dentist are considered essential health checkups for individuals of any age or gender. Not only can your dentist help diagnose any cases of teeth decay or gum infections but can also detect early signs of oral cancer.
+      </h5>
+    </div>
+
+  </section>
+
+  <section id="footer" style="background-color: #000000 ; color: white;">
+
+    <div class="row">
+
+      <div class="col-md-6 col-sm-12">
+        <div class="footer-component right">
+          <h3>Project members</h3>
+          <ul>
+            <li>ch.Srivalli : 20Q71A05F6</li>
+            <li>p.Gayatri : 20Q71A05E8</li>
+            <li>T.Bhanu Sanker : 20Q71A05A7</li>
+            <li>K.Praveen Kumar : 20Q71A0579</li>
+            <li>M.likith : 20Q71A05E0</li>
+          </ul>
+        </div>
+      </div>
+
+      
+      <div class="col-md-6 col-sm-12">
+        <div class="footer-component mid">
+          <h3>Follow us</h3>
+          <a href="#" style="color:inherit;"><i class="fa-brands fa-3x fa-instagram"></i></a>
+          <a href="#" style="color:inherit;"><i class="fa-brands fa-3x fa-facebook"></i></a>
+          <a href="#" style="color:inherit;"><i class="fa-brands fa-3x fa-twitter"></i></a>
+          <a href="#" style="color:inherit;"><i class="fa-solid fa-3x fa-paper-plane"></i></a>
+        </div>   
+      </div>
+      
+    </div>
+    
+      <div class="footer-component left">
+        <h6>@ Non-Copyrighted CSP Batch-19 </h6>
+      </div>
+
+  </section>
+
+
+
+
+</body>
+
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+<script>
+
+$(document).ready(function(){
+$('body').css('display', 'none');
+$('body').fadeIn(500);
+
+});
+  // $(document).ready(function () {
+  //   var videos = document.querySelectorAll('video');
+
+  //   function pauseAll(elem) {
+  //     for (var i = 0; i < videos.length; i++) {
+  //       //Is this the one we want to play?
+  //       if (videos[i] == elem) continue;
+  //       //Have we already played it && is it already paused?
+  //       if (videos[i].played.length > 0 && !videos[i].paused) {
+  //         // Then pause it now
+  //         videos[i].pause();
+  //       }
+  //     }
+  //   }
+
+  //   for (var i = 0; i < videos.length; i++)
+  //     videos[i].addEventListener('play', function () { pauseAll(this) }, true);
+  // })
+
+</script>

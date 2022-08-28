@@ -1,0 +1,203 @@
+/* readable css code 😊😊😊 */
+
+/* Google fonts Section  👇👇👇*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap'); 
+                        this is italic font */
+
+
+
+/* css for all 👇👇👇*/
+*{
+    overflow:hidden; 
+}
+html{
+    overflow:scroll;
+}
+:root{
+    --font :'Merriweather', serif;
+}
+
+
+/*css for Navbar with media queries 👇👇👇 */
+/* .n{
+    width:100%;
+    position: fixed;
+    top: 0;
+} */
+nav{
+    font-family: var(--font);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.nav-link{
+    border:7px solid rgb(249, 249, 249);
+    border-radius: 7px;
+}
+.active{
+    font-family: var(--font);
+    font-size: 1.1rem;
+    font-weight: bold;
+    color:black;
+    background-color: rgb(187, 255, 200);
+    border-radius:10px;
+}
+
+.non-active:hover{
+    font-family: var(--font);
+    font-size: 1.1rem;
+    font-weight: bold;
+    color:black;
+    background-color: rgb(187, 255, 200);
+    border-radius:10px;
+}
+.nav-link:hover{
+    font-family: var(--font);
+    font-size: 1.1rem;
+    font-weight: bold;
+    color:black;
+    background-color: rgb(187, 255, 200);
+    border-radius:10px;
+}
+
+@media (max-width: 768px){
+    .nav-link{
+        margin:0% 5%;
+    }
+    nav{
+        font-size: 1rem;
+    }
+    
+}
+
+
+/* css for slider with media queries 👇👇👇*/
+.carousel-caption{
+    font-family: var(--font);
+    font-weight: bold;
+}
+.carousel-caption button{
+    margin:2% 0%;
+}
+
+@media (max-width: 768px){
+    .carousel-item img{
+        width: 100%;
+        height: 300px;
+    }
+}
+
+
+/* about us Section with media queries 👇👇👇*/
+
+#about{
+    text-align: center;
+    margin:3% 3%;
+    font-family: var(--font);
+}
+#about h1{
+    margin:2% 0% 3%;
+}
+#about h2{
+    margin:5% 0%;
+}
+
+.about-info{
+    padding:2% 5% 3%;
+}
+
+/* programs section with media queries 👇👇👇*/
+
+#prog{
+    background-color:#e9e8e8;
+    /* margin:1%; */
+    border-radius:10px;
+}
+.row{
+    padding:2% 3%;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+.card img{
+    filter:brightness(70%);
+}
+.card img:hover{
+    filter:brightness(120%);
+}
+.card:hover{
+    filter:brightness(120%);
+}
+
+
+/* footer Section with media queries 👇👇👇 */
+
+#footer{
+    padding:1% 5%;
+    font-family: var(--font);
+}
+
+.footer-component{
+    text-align:center;
+    text-transform:uppercase;
+}
+
+.footer-component i{
+    margin:2% 2%;
+}
+
+/* .left{
+    display:block;
+    text-align: center;
+} */
+
+@media (max-width: 800px) {
+    #footer{
+        font-size: 12px;
+    }
+    #footer h3{
+        font-size: 20px;
+    }
+  }
+
+
+
+
+/* contact from Section with media queries 👇👇👇*/
+#contact{
+    margin:12% 0%;
+    font-family: var(--font);
+}
+#footer1{
+    padding:1% 5%;
+    font-family: var(--font);
+    background-color:#e9e9e9;
+    text-align: center;
+}
+
+.footer-component1{
+    text-align:center;
+    text-transform:uppercase;
+}
+
+.footer-component1 i{
+    margin:2% 2%;
+}
+
+@media (max-width: 800px) {
+    #footer1{
+        font-size: 12px;
+    }
+    #footer1 h3{
+        font-size: 20px;
+    }
+    #contact{
+        margin:24% 0%;
+        font-family: var(--font);
+    }
+  }
+

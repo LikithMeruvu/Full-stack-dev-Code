@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-light navbar-light">
+      <a class="navbar-brand" href="#" style="margin-left: 20px">
+        <img
+          src="images/d6b751d75c50b98be47a56bd11106334.jpg"
+          alt=""
+          width="50"
+          height="44"
+          class="d-inline-block align-text-top"
+        />
+      </a>
+      <div style="display: inline-block">Health Care Programs</div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ms-auto me-5">
+          <li class="nav-item">
+            <a href="index.html#slider" class="nav-link one non-active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#about" class="nav-link two non-active"
+              >About Us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="index.html#prog" class="nav-link three non-active"
+              >Our Services</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link four active">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- contact form -->
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 mr-auto">
+            <h2>Contact Us</h2>
+            <p class="mb-5">
+              you can contact us using this contact form. send your email and
+              your name and message. we will reply to your message in 2-3
+              working days you will recieve our reply to your mail!
+            </p>
+
+            <ul class="list-unstyled pl-md-5 mb-5">
+              <li class="d-flex text-black mb-2">
+                <span class="mr-3"><span class="icon-map"></span></span> Rtc
+                complex, 530004, vizag city,<br />Andhra Pradesh, India
+              </li>
+              <li class="d-flex text-black mb-2">
+                <span class="mr-3"><span class="icon-phone"></span></span> +91
+                9876543210
+              </li>
+              <li class="d-flex text-black">
+                <span class="mr-3"><span class="icon-envelope-o"></span></span>
+                <a
+                  href="https://codebook369@gmail.com"
+                  style="text-decoration: none; color: inherit"
+                  >codebook369@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-6">
+            <form
+              class="mb-5"
+              method="post"
+              id="contactForm"
+              name="contactForm"
+              action="mailto:codebook369@gmail.com"
+              enctype="text/plain"
+            >
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="name" class="col-form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="name"
+                    id="name"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="email" class="col-form-label">Email</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="message" class="col-form-label">Message</label>
+
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="7"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <input
+                    type="submit"
+                    value="Send Message"
+                    class="btn btn-outline-primary rounded-0 py-2 px-4"
+                  />
+                  <span class="submitting"></span>
+                </div>
+              </div>
+            </form>
+
+            <div id="form-message-warning mt-4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section id="footer1" style="color:white; background-color:#000000">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="footer-component1\ right">
+            <h3>Project members</h3>
+            <ul>
+              <li>ch.Srivalli : 20Q71A05F6</li>
+              <li>p.Gayatri : 20Q71A05E8</li>
+              <li>T.Bhanu Sanker : 20Q71A05A7</li>
+              <li>K.Praveen Kumar : 20Q71A0579</li>
+              <li>M.likith : 20Q71A05E0</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+          <div class="footer-component1\ mid">
+            <h3>Follow us</h3>
+            <a href="#" style="color: inherit"
+              ><i class="fa-brands fa-3x fa-instagram"></i
+            ></a>
+            <a href="#" style="color: inherit"
+              ><i class="fa-brands fa-3x fa-facebook"></i
+            ></a>
+            <a href="#" style="color: inherit"
+              ><i class="fa-brands fa-3x fa-twitter"></i
+            ></a>
+            <a href="#" style="color: inherit"
+              ><i class="fa-solid fa-3x fa-paper-plane"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-component1\ left">
+        <h6>@ Non-Copyrighted CSP Batch-19</h6>
+      </div>
+    </section>
+  </body>
+</html>
+<script
+  defer
+  src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+  crossorigin="anonymous"
+></script>
+<script type="text/javascript" src="index.js"></script>

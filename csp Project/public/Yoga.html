@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoga </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      font-family: var(--font);
+    }
+
+    html {
+      margin: 0px;
+      overflow: hidden;
+      overflow-y: scroll;
+      font-family: var(--font);
+    }
+
+    .hero {
+      position: absolute;
+      top: 40%;
+      left: 37%;
+      text-align: center;
+      color: white;
+    }
+
+    .hero button {
+      margin: 4% 0%;
+    }
+
+    .video {
+      /* position: relative; */
+      filter: brightness(40%);
+      width: 100%;
+      height: 750px;
+      object-fit: fill;
+      z-index: -1;
+    }
+
+    .card {
+      text-align: center;
+      padding: 2% 2%;
+    }
+
+    .card h5 {
+      margin: 0% 0%;
+    }
+
+    @media (max-width:768px) {
+      .video {
+        filter: brightness(40%);
+        width: 100%;
+        height: 600px;
+        object-fit: fill;
+        z-index: -1;
+      }
+
+      .hero {
+        position: absolute;
+        top: 30%;
+        left: 4%;
+        text-align: center;
+        color: white;
+      }
+
+      .hero h1 {
+        font-size: 24px;
+      }
+
+      .hero h5 {
+        font-size: 12px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- The header video pack -->
+  <div class="container">
+    <nav class="navbar fixed-top navbar-expand-lg bg-light navbar-light">
+      <a class="navbar-brand" href="#" style="margin-left: 20px">
+        <img src="images/d6b751d75c50b98be47a56bd11106334.jpg" alt="" width="50" height="44"
+          class="d-inline-block align-text-top" />
+      </a>
+      <div style="display: inline-block">Health Care Programs</div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ms-auto me-5">
+          <li class="nav-item">
+            <a href="index.html#slider" class="nav-link one non-active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#about" class="nav-link two non-active">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Health Care Programs
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item active" href="#">Yoga</a></li>
+              <li><a class="dropdown-item" href="Meditation.html">Meditation</a></li>
+              <li><a class="dropdown-item" href="Exercises.html">Exercises</a></li>
+              <li><a class="dropdown-item" href="Checkups.html">Health Checkups</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="contact-us.html" class="nav-link four non-active">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+  <section class="head">
+    <video autoplay="true" loop="true" muted class="video">
+      <source src="videos/yoga.mp4" type="video/mp4">
+      </source>
+    </video>
+  </section>
+
+  <div class="hero">
+    <h1>Start Your Yoga Journey</h1>
+    <h5>Follow The Daily Routine For 30-Days</h5>
+
+    <div class="start" style="text-align:center;">
+      <button class="btn btn-outline-light btn-lg"><a href="#yoga" style="text-decoration:none; color:inherit; margin-right:10px;">Beginner Yoga</a></button>
+      <button class="btn btn-outline-light btn-lg"><a href="#yoga1" style="text-decoration:none; color:inherit; margin-right:10px;">Advanced Yoga</a></button>
+    </div>
+
+    <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Download Complete
+      Tutorial</button>
+  </div>
+
+
+  <!-- contents of yoga routine off canvas -->
+
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+    aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Choose your Level</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <button class="btn btn-lg btn-block btn-outline-dark" style="width:100%; margin:3% 2%;" type="button"
+        data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+        aria-controls="collapseExample">
+        beginner Level
+      </button>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <p style="font-weight:bold;">The complete Yoga guide for absolute beginners Click This Download button to get
+            all video related content of all Poses and make sure that you do all poses for (30-45 seconds)/per Day for
+            30-days And After you can proceed for Advanced level Yoga</p>
+
+          <button class="btn btn-outline-dark btn-block" style="width:100%; margin:1% 2%; font-weight:bold"><a
+              href="https://drive.google.com/file/d/1CPvimbLqayLFTBjsQ131RL33q6XiNHt3/view?usp=drivesdk"
+              download="YogaBeginnersBundle" style="text-decoration: none; color:inherit;">Download Complete Zip
+              File</a></button>
+
+        </div>
+      </div>
+
+      <button class="btn btn-lg btn-block btn-outline-dark" style="width:100%; margin:3% 2%;" type="button"
+        data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false"
+        aria-controls="collapseExample">
+        Advanced Level
+      </button>
+
+      <div class="collapse" id="collapseExample1">
+        <div class="card card-body">
+          <p style="font-weight:bold;">The complete Yoga guide for Advanced level Yoga Click This Download button to get
+            all video related content of all Poses and make sure that you do all poses for (45 - 60 seconds)/per Day for
+            30-days for deserved results</p>
+
+          <button class="btn btn-outline-dark btn-block" style="width:100%; margin:1% 2%; font-weight:bold"><a
+              href="https://drive.google.com/file/d/1CS_gUQscOKKb-tkrQ3iJ1_S3l9q1ngKn/view?usp=drivesdk"
+              download="YogaAdvancedBundle" style="text-decoration: none; color:inherit;">Download Complete Zip
+              File</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- yoga beginners section -->
+
+
+  <section id="yoga" style="background-color:#F5EDED;">
+    <h1 style="text-align:center; margin:4% 0%;">Beginner Level Yoga <br>(Practice all Poses 30 - 45 Seconds daily)</h1>
+    <div class="row">
+      <div class="col-md-4 col-sm-12">
+        <div class="card" id="1">
+          <div class="card-head">
+            <h3>1. Diamond thunderbolt (Vajrasana)</h3>
+          </div>
+          <div class="card-body">
+            <!-- <iframe width="100%" height="315px" src="https://www.youtube.com/embed/3ILEYJOtHgM" style="display: block;"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe> -->
+            <video width="100%" height="350" controls id="1">
+              <source src="videos/yoga-beginners/1.mp4" type="video/mp4">
+            </video>
+
+            <h5>Benefits: This pose helps regulate blood circulation in pelvic area and aids in digestion.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card" id="1">
+          <div class="card-head">
+            <h3>2. Gracious pose (Bhadrasana)</h3>
+          </div>
+          <div class="card-body">
+            <!-- <iframe width="100%" height="345px" src="https://www.youtube.com/embed/7WroUo8ESjQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video width="100%" height="382" controls id="2">
+              <source src="videos/yoga-beginners/2.mp4" type="video/mp4">
+            </video>
+
+            <h5>Benefits: Body alignment is improved thanks to this pose.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card" id="1">
+          <div class="card-head">
+            <h3>3. Cobra pose (Bhujangasana)</h3>
+          </div>
+          <div class="card-body">
+            <!-- <iframe width="100%" height="345" src="https://www.youtube.com/embed/WOmwRyHehAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video width="100%" height="382" controls id="3">
+              <source src="videos/yoga-beginners/3.mp4" type="video/mp4">
+            </video>
+
+            <h5>Benefits: This pose is therapeutic for asthma, stretching, improves menstrual irregularities.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card" id="1">
+          <div class="card-head">
+            <h3>4. Half Spinal Twist Pose (Ardha-Matsyendrasana)</h3>
+          </div>
+          <div class="card-body">
+            <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/0wutbP6G3JQ?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video width="100%" height="350" controls id="4">
+              <source src="videos/yoga-beginners/4.mp4" type="video/mp4">
+            </video>
+
+            <h5>Benefits: The pose increases flexibility and cleanses internal organs.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card" id="1">
+          <div class="card-head">
+            <h3>5. Corpse pose (Shavasana) </h3>
+          </div>
+          <div class="card-body">
+            <!-- <iframe width="100%" height="325" src="https://www.youtube.com/embed/1VYlOKUdylM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video width="100%" height="360" controls id="5">
+              <source src="videos/yoga-beginners/5.mp4" type="video/mp4">
+            </video>
+
+            <h5>Benefits: This pose is an important one for reducing anxiety and promoting muscle relaxation.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card" id="1">
+          <div class="card-head">
+            <h3>6. Fish pose (Matsyasana)</h3>
+          </div>
+          <div class="card-body">
+            <!-- <iframe width="100%" height="350" src="https://www.youtube.com/embed/MWoteoYYCVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video width="100%" height="380" controls id="6">
+              <source src="videos/yoga-beginners/6.mp4" type="video/mp4">
+            </video>
+
+            <h5>Benefits: This pose strengths muscles and improves posture.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card" id="1">
+          <div class="card-head">
+            <h3>7. Seated Forward Bend (Paschimottanasana)</h3>
+          </div>
+          <div class="card-body">
+            <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/t15nG-gf2Ow?start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video width="100%" height="300" controls id="7">
+              <source src="videos/yoga-beginners/7.mp4" type="video/mp4">
+            </video>
+
+            <h5>Benefits: This pose helps with many issues which includes relieving the symptoms of menopause and
+              menstrual discomfort.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card" id="1">
+          <div class="card-head">
+            <h3>8. Triangle Pose (Trikonasana)</h3>
+          </div>
+          <div class="card-body">
+            <!-- <iframe width="100%" height="372" src="https://www.youtube.com/embed/_1124fj0BeQ?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video width="100%" height="350" controls id="8">
+              <source src="videos/yoga-beginners/8.mp4" type="video/mp4">
+            </video>
+
+            <h5>Benefits: This pose stimulates function of abdominal organs along with reducing stress.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card" id="1">
+          <div class="card-head">
+            <h3>9. Chair pose (Utkatasana)</h3>
+          </div>
+          <div class="card-body">
+            <!-- <iframe width="100%" height="372" src="https://www.youtube.com/embed/qCgodfzkPBM?start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video width="100%" height="350" controls id="9">
+              <source src="videos/yoga-beginners/9.mp4" type="video/mp4">
+            </video>
+
+            <h5>Benefits: This one stimulates the heart, diaphragm, and abdominal organs.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card" id="1">
+          <div class="card-head">
+            <h3>10. Child's pose (Balasana)</h3>
+          </div>
+          <div class="card-body">
+            <!-- <iframe width="100%" height="372" src="https://www.youtube.com/embed/qYvYsFrTI0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video width="100%" height="370" controls id="10">
+              <source src="videos/yoga-beginners/10.mp4" type="video/mp4">
+            </video>
+
+            <h5>Benefits: The child's pose reduces stress and fatigue.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card" id="1">
+          <div class="card-head">
+            <h3>11. Wind-Relieving Pose (Pawanmuktasana)</h3>
+          </div>
+          <div class="card-body">
+            <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/p7lLJRXevcc?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video width="100%" height="320" controls id="11">
+              <source src="videos/yoga-beginners/11.mp4" type="video/mp4">
+            </video>
+
+            <h5>Benefits: This pose is used for eliminating trapped gas and improving your digestive system.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card" id="1">
+          <div class="card-head">
+            <h3>12. Half Standing Forward Bend (Ardha Uttanasana)</h3>
+          </div>
+          <div class="card-body">
+            <!-- <iframe width="100%" height="340" src="https://www.youtube.com/embed/s888DrdU_Gw?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video width="100%" height="350" controls id="12">
+              <source src="videos/yoga-beginners/12.mp4" type="video/mp4">
+            </video>
+
+            <h5>Benefits: This pose helps strengthen your body and aids in digestion.</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="yoga1" style="background-color: #EEEEEE;">
+    <h1 style="text-align:center; margin:4% 0%;">Advanced Level Yoga <br>(Practice all Poses 60 - 120 Seconds daily)
+    </h1>
+    <div class="row">
+      <div class="col-md-4 col-sm-12">
+        <div class="card" id="1">
+          <div class="card-head">
+            <h3>1. Boat Pose (Navasana)</h3>
+          </div>
+          <div class="card-body">
+            <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/QVEINjrYUPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video width="100%" height="350" controls>
+              <source src="videos/yoga-advanced/1.mp4" type="video/mp4">
+            </video>
+
+            <h5>Benefits: Boat pose strengthens the core muscles from hip flexors to the spinal column and everything in
+              between. It's also a great way to start creating inner heat</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card" id="1">
+          <div class="card-head">
+            <h3>2. Eagle Pose (Garudasana)</h3>
+          </div>
+          <div class="card-body">
+            <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/FTWFM-lL5jQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video width="100%" height="350" controls>
+              <source src="videos/yoga-advanced/2.mp4" type="video/mp4">
+            </video>
+
+            <h5>Benefits: Eagle pose, or Garudasana, is a great pose to find confidence in your balance. It's also a
+              wonderful counter option to many of your typical yoga poses.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card" id="1">
+          <div class="card-head">
+            <h3>3. Ardha Chandra Chapasana</h3>
+          </div>
+          <div class="card-body">
+            <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/csErxVR7dpA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video width="100%" height="350" controls>
+              <source src="videos/yoga-advanced/3.mp4" type="video/mp4">
+            </video>
+
+            <h5>Benefits: you will experience an even greater sense of concentrated focus that happens especially when
+              we do balancing postures.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card" id="1">
+          <div class="card-head">
+            <h3>4. Dolphin Pose (Ardha Pincha Mayurasana)</h3>
+          </div>
+          <div class="card-body">
+            <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/W9qEcTjmA78?start=13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video width="100%" height="350" controls>
+              <source src="videos/yoga-advanced/4.mp4" type="video/mp4">
+            </video>
+
+            <h5>Benefits: You'll gain core strength, open your shoulders, and find the ability to maintain your
+              concentration.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card" id="1">
+          <div class="card-head">
+            <h3>5. Crow (Bakasana)</h3>
+          </div>
+          <div class="card-body">
+            <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/Mc6D2OrMTX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video width="100%" height="400" controls>
+              <source src="videos/yoga-advanced/5.mp4" type="video/mp4">
+            </video>
+
+            <h5>Benefits: This pose is also a huge confidence builder especially with overcoming fears.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card" id="1">
+          <div class="card-head">
+            <h3>6. Sleeping Vishnu Pose (Ananthasana)</h3>
+          </div>
+          <div class="card-body">
+            <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/lNxfdoQp27Y?start=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video width="100%" height="350" controls>
+              <source src="videos/yoga-advanced/6.mp4" type="video/mp4">
+            </video>
+
+            <h5>Benefits: Promotes joy and bliss Improves balance Strengthens inner thigh and core muscles.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card" id="1">
+          <div class="card-head">
+            <h3>7. Upward Plank (Purvottanasana)</h3>
+          </div>
+          <div class="card-body">
+            <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/nZrtb3mL32U?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video width="100%" height="350" controls>
+              <source src="videos/yoga-advanced/7.mp4" type="video/mp4">
+            </video>
+
+            <h5>Benefits: Builds healthy triceps and rhomboids, the muscles on the backs of your arms and between your
+              shoulder blades.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card" id="1">
+          <div class="card-head">
+            <h3>8. Camel Pose (Ustrasana)</h3>
+          </div>
+          <div class="card-body">
+            <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/_NNnowkcIqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video width="100%" height="350" controls>
+              <source src="videos/yoga-advanced/8.mp4" type="video/mp4">
+            </video>
+
+            <h5>Benefits: Strengthens the entire back chain of muscles: hamstrings, gluteus, spinal extensors, and
+              rhomboids.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card" id="1">
+          <div class="card-head">
+            <h3>9. Dancer pose (Natarajasana)</h3>
+          </div>
+          <div class="card-body">
+            <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/TXNgRNsqcPo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video width="100%" height="350" controls>
+              <source src="videos/yoga-advanced/9.mp4" type="video/mp4">
+            </video>
+
+            <h5>Benefits: Improves the standing leg's joint alignment, and stretches the lifted leg's quadriceps.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="card" id="1">
+          <div class="card-head">
+            <h3>10. Hand To Foot Pose,(Pada Hastasana)</h3>
+          </div>
+          <div class="card-body">
+            <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/DWWGLRJb2uc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video width="100%" height="350" controls>
+              <source src="videos/yoga-advanced/10.mp4" type="video/mp4">
+            </video>
+
+            <h5>Benefits: Strengthens the quadriceps and releases the neck and shoulders Counterpose for wrists and
+              back.</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="footer" style="background-color: #000000 ; color: white;">
+
+    <div class="row">
+
+      <div class="col-md-6 col-sm-12">
+        <div class="footer-component right">
+          <h3>Project members</h3>
+          <ul>
+            <li>ch.Srivalli : 20Q71A05F6</li>
+            <li>p.Gayatri : 20Q71A05E8</li>
+            <li>T.Bhanu Sanker : 20Q71A05A7</li>
+            <li>K.Praveen Kumar : 20Q71A0579</li>
+            <li>M.likith : 20Q71A05E0</li>
+          </ul>
+        </div>
+      </div>
+
+      
+      <div class="col-md-6 col-sm-12">
+        <div class="footer-component mid">
+          <h3>Follow us</h3>
+          <a href="#" style="color:inherit;"><i class="fa-brands fa-3x fa-instagram"></i></a>
+          <a href="#" style="color:inherit;"><i class="fa-brands fa-3x fa-facebook"></i></a>
+          <a href="#" style="color:inherit;"><i class="fa-brands fa-3x fa-twitter"></i></a>
+          <a href="#" style="color:inherit;"><i class="fa-solid fa-3x fa-paper-plane"></i></a>
+        </div>   
+      </div>
+      
+    </div>
+    
+      <div class="footer-component left">
+        <h6>@ Non-Copyrighted CSP Batch-19 </h6>
+      </div>
+
+  </section>
+
+
+
+
+</body>
+
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+<script>
+
+  $(document).ready(function () {
+    var videos = document.querySelectorAll('video');
+
+    function pauseAll(elem) {
+      for (var i = 0; i < videos.length; i++) {
+        //Is this the one we want to play?
+        if (videos[i] == elem) continue;
+        //Have we already played it && is it already paused?
+        if (videos[i].played.length > 0 && !videos[i].paused) {
+          // Then pause it now
+          videos[i].pause();
+        }
+      }
+    }
+
+    for (var i = 0; i < videos.length; i++)
+      videos[i].addEventListener('play', function () { pauseAll(this) }, true);
+  })
+
+</script>

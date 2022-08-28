@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meditation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    * {
+      font-family: var(--font);
+    }
+
+    html {
+      margin: 0px;
+      overflow: hidden;
+      overflow-y: scroll;
+      font-family: var(--font);
+    }
+
+    .hero {
+      position: absolute;
+      top: 50%;
+      left: 33%;
+      text-align: center;
+      color: white;
+    }
+
+    .hero button {
+      margin: 4% 0%;
+    }
+
+    .video {
+      /* position: relative; */
+      filter: brightness(40%);
+      width: 100%;
+      height: 750px;
+      object-fit: fill;
+      z-index: -1;
+    }
+
+    /* .card {
+          text-align: center;
+          padding: 2% 2%;
+        }
+    
+        .card h5 {
+          margin: 0% 0%;
+        } */
+
+        .medi-intro{
+          text-align: center;
+        }
+    .intro img{
+      width: 70%;
+      /* margin: 4% 4% 0% 4%; */
+    }
+    /* .medi-intro h5{
+      margin:0% 8%;
+    } */
+
+    .medi-tips {
+      padding: 3% 8%;
+      text-align:center;
+    }
+
+    .req {
+      margin: 0% 30%;
+      text-align: left;
+      font-size: 1.5rem;
+    }
+
+    li {
+      margin: 1% 0%;
+    }
+
+    /* .req-li{
+      text-align: left;
+      font-size: 22px;
+    } */
+
+    @media (max-width:768px) {
+      .video {
+        filter: brightness(40%);
+        width: 100%;
+        height: 600px;
+        object-fit: fill;
+        z-index: -1;
+      }
+
+      .intro img {
+        margin-left: 0px;
+        width: 304px;
+        height: 281px;
+      }
+
+      .medi-tips img {
+        width: 304px;
+        height: 281px;
+      }
+
+      .hero {
+        position: absolute;
+        top: 30%;
+        left: 4%;
+        text-align: center;
+        color: white;
+      }
+
+      .req {
+        margin: 0% 7%;
+        text-align: left;
+        font-size: 1rem;
+      }
+
+      .hero h1 {
+        font-size: 24px;
+      }
+
+      .hero h5 {
+        font-size: 12px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- The header video pack -->
+  <div class="container">
+    <nav class="navbar fixed-top navbar-expand-lg bg-light navbar-light">
+      <a class="navbar-brand" href="#" style="margin-left: 20px">
+        <img src="images/d6b751d75c50b98be47a56bd11106334.jpg" alt="" width="50" height="44"
+          class="d-inline-block align-text-top" />
+      </a>
+      <div style="display: inline-block">Health Care Programs</div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ms-auto me-5">
+          <li class="nav-item">
+            <a href="index.html#slider" class="nav-link one non-active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#about" class="nav-link two non-active">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Health Care Programs
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="Yoga.html">Yoga</a></li>
+              <li><a class="dropdown-item active" href="#">Meditation</a></li>
+              <li><a class="dropdown-item" href="Exercises.html">Exercises</a></li>
+              <li><a class="dropdown-item" href="Checkups.html">Health Checkups</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="contact-us.html" class="nav-link four non-active">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+  <section class="head">
+    <video autoplay="true" loop="true" muted class="video">
+      <source src="videos/medi.mp4" type="video/mp4">
+      </source>
+    </video>
+  </section>
+
+  <div class="hero">
+    <h1>Start Your Meditation Journey</h1>
+    <h5>Follow The Daily Routine For 30-Days</h5>
+
+    <div class="start" style="text-align:center;">
+      <button class="btn btn-outline-light btn-lg"><a href="#medi-intro"
+          style="text-decoration:none; color:inherit; margin-right:10px;">Start Now</a></button>
+      <!-- <button class="btn btn-outline-light btn-lg"><a href="#yoga1"
+          style="text-decoration:none; color:inherit; margin-right:10px;">Advanced Yoga</a></button> -->
+    </div>
+
+    <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" style="visibility: hidden;">Download Tutorial</button>
+  </div>
+
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+    aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Choose your Level</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <button class="btn btn-lg btn-block btn-outline-dark" style="width:100%; margin:3% 2%;" type="button"
+        data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+        aria-controls="collapseExample">
+        beginner Level
+      </button>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <p style="font-weight:bold;">The complete Yoga guide for absolute beginners Click This Download button to get
+            all video related content of all Poses and make sure that you do all poses for (30-45 seconds)/per Day for
+            30-days And After you can proceed for Advanced level Yoga</p>
+
+          <button class="btn btn-outline-dark btn-block" style="width:100%; margin:1% 2%; font-weight:bold"><a
+              href="https://drive.google.com/file/d/1CPvimbLqayLFTBjsQ131RL33q6XiNHt3/view?usp=drivesdk"
+              download="YogaBeginnersBundle" style="text-decoration: none; color:inherit;">Download Complete Zip
+              File</a></button>
+
+        </div>
+      </div>
+
+      <button class="btn btn-lg btn-block btn-outline-dark" style="width:100%; margin:3% 2%;" type="button"
+        data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false"
+        aria-controls="collapseExample">
+        Advanced Level
+      </button>
+
+      <div class="collapse" id="collapseExample1">
+        <div class="card card-body">
+          <p style="font-weight:bold;">The complete Yoga guide for Advanced level Yoga Click This Download button to get
+            all video related content of all Poses and make sure that you do all poses for (45 - 60 seconds)/per Day for
+            30-days for deserved results</p>
+
+          <button class="btn btn-outline-dark btn-block" style="width:100%; margin:1% 2%; font-weight:bold"><a
+              href="https://drive.google.com/file/d/1CS_gUQscOKKb-tkrQ3iJ1_S3l9q1ngKn/view?usp=drivesdk"
+              download="YogaAdvancedBundle" style="text-decoration: none; color:inherit;">Download Complete Zip
+              File</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- meditation Section and its content -->
+  <section id="medi-intro">
+    <h1 style="text-align:center; margin:8% 0% 0%;">How to do meditation?<br>
+      <h3 style="text-align:center;">(follow this step by step tutorial)</h3>
+    </h1>
+    <div class="medi-tips intro">
+      <img src="images/b1.jpg" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">Meditation is a mind and body practice that has a long history of use
+        for increasing calmness and physical
+        relaxation, improving psychological balance, coping with illness, and enhancing overall health and well-being.
+        Mind and body practices focus on the interactions among the brain, mind, body, and behavior.</h5>
+    </div>
+  </section>
+
+  <!-- tips to start meditation section -->
+  <section id="medi-tips">
+    <div class="medi-tips">
+      <h2 style="text-align:center;">1. preparation for meditation</h2>
+      <img src="images/meditation.jpg" width="100%" height="600" alt="">
+      <div style="text-align:center; margin:2% 4%;"><h5>Think about what you want to achieve with your meditation. People
+        come to meditation for a wide range of reasons — whether to improve their creativity, help visualize a goal,
+        quiet their inner chatter, or make a spiritual connection.</h5></div>
+      <h2 style="text-align:center;">Basic requirements for meditation</h2>
+      <div class="req">
+        <ul>
+          <div class="req-li">
+            <li>
+              1. Find a distraction-free area to meditate</li>
+            <li>2. Use a meditation cushion. </li>
+            <li>
+              3. Wear comfortable clothes. </li>
+            <li>
+              4. Choose a time when you're comfortable.</li>
+            <li>5. Have a timer at hand.</li>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">2. Sit on your cushion</h2>
+      <img src="medi-imgs/m1.jpg" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">Sit on your cushion or chair with a straight back. The upright posture helps you to concentrate on your breathing as you purposefully inhale and exhale. If you're sitting in a chair with a back, try not to lean back against it or slouch. Stay as erect as possible.
+        Position your legs in whichever manner is comfortable to you. You can extend them out in front of you or cross them beneath you like a pretzel if you're using a cushion on the ground. The most important thing is that your posture remains straight.</h5>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">3. Don't fret about what to do with your hands</h2>
+      <img src="medi-imgs/m2.jpg" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">Don't fret about what to do with your hands. In the media, we often see people holding their hands at their knees when meditating, but if that's uncomfortable for you, don't worry about it. You can fold them in your lap, let them hang at your sides — whatever allows you to clear your mind and concentrate on your breathing.</h5>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">4. Tilt your chin as though you're looking downward</h2>
+      <img src="medi-imgs/m3.jpg" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">Tilt your chin as though you're looking downward. It doesn't matter if your eyes are opened or closed when you meditate, though many people find it easier to block out visual distractions with closed eyes. Either way, tilting your head as though you're looking down helps open up the chest and ease your breathing.</h5>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">5. Set your timer</h2>
+      <img src="medi-imgs/m4.jpg" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">
+        Set your timer. When you're in a comfortable position and are ready to get started, set your timer for however long you'd like to meditate. Don't feel any pressure to reach an hour-long transcendental state during your first week. Start small with 3-5 minute sessions, and work your way up to half an hour, or even longer if you'd like.</h5>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">6. Keep your mouth closed as you breathe.</h2>
+      <img src="medi-imgs/m5.jpg" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">Keep your mouth closed as you breathe. You should both inhale and exhale through your nose when meditating. However, make sure your jaw muscles are relaxed, even though your mouth is closed. Don't clench your jaws or grind your teeth; simply relax.</h5>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">7. Focus on your breathing.</h2>
+      <img src="medi-imgs/m6.jpg" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">Focus on your breathing. This is what meditation's all about. Instead of trying not to think about the things that might stress you out on a day-to-day basis, give yourself something positive to focus on: your breath. By focusing all of your concentrating on your inhalations and exhalations, you'll find that all other thoughts from the outside world fall away on their own, without you having to worry about how to ignore them</h5>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">8. Observe your breath, but don't analyze it.</h2>
+      <img src="medi-imgs/m7.jpg" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">The goal is to be present within each breath, not to be able to describe it. Don't worry about remembering what you're feeling, or being able to explain the experience at a later time. Just experience each breath in the moment. When it passes, experience the next breath. Try not to think about the breathing with your mind just experience it through your sense</h5>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">9. Bring your attention back to your breath if it wanders.</h2>
+      <img src="medi-imgs/m8.jpg" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">Even when you've gained a lot of experience with meditation, you'll find that your thoughts might wander. You'll start thinking about work or bills or the errands you have to run later. Whenever you notice the outside world creeping in, don't panic and try to ignore them.</h5>
+    </div>
+
+    <div class="medi-tips">
+      <h2 style="text-align:center;">10. Don't be too hard on yourself.</h2>
+      <img src="medi-imgs/m9.jpg" alt="">
+      <h5 style="margin:2% 0%; text-align:center;">Accept that focus will be hard for you when you're just starting out. Don't berate yourself all beginners experience the inner chatter. In fact, some would say that this continual return to the present moment is the "practice" of meditation. Furthermore, don't expect your meditation practice to change your life overnight.</h5>
+    </div>
+
+
+  </section>
+
+  <section id="footer" style="background-color: #000000 ; color: white;">
+
+    <div class="row">
+
+      <div class="col-md-6 col-sm-12">
+        <div class="footer-component right">
+          <h3>Project members</h3>
+          <ul>
+            <li>ch.Srivalli : 20Q71A05F6</li>
+            <li>p.Gayatri : 20Q71A05E8</li>
+            <li>T.Bhanu Sanker : 20Q71A05A7</li>
+            <li>K.Praveen Kumar : 20Q71A0579</li>
+            <li>M.likith : 20Q71A05E0</li>
+          </ul>
+        </div>
+      </div>
+
+      
+      <div class="col-md-6 col-sm-12">
+        <div class="footer-component mid">
+          <h3>Follow us</h3>
+          <a href="#" style="color:inherit;"><i class="fa-brands fa-3x fa-instagram"></i></a>
+          <a href="#" style="color:inherit;"><i class="fa-brands fa-3x fa-facebook"></i></a>
+          <a href="#" style="color:inherit;"><i class="fa-brands fa-3x fa-twitter"></i></a>
+          <a href="#" style="color:inherit;"><i class="fa-solid fa-3x fa-paper-plane"></i></a>
+        </div>   
+      </div>
+      
+    </div>
+    
+      <div class="footer-component left">
+        <h6>@ Non-Copyrighted CSP Batch-19 </h6>
+      </div>
+
+  </section>
+
+
+
+
+</body>
+
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+<script>
+
+$(document).ready(function(){
+$('body').css('display', 'none');
+$('body').fadeIn(700);
+
+});
+  // $(document).ready(function () {
+  //   var videos = document.querySelectorAll('video');
+
+  //   function pauseAll(elem) {
+  //     for (var i = 0; i < videos.length; i++) {
+  //       //Is this the one we want to play?
+  //       if (videos[i] == elem) continue;
+  //       //Have we already played it && is it already paused?
+  //       if (videos[i].played.length > 0 && !videos[i].paused) {
+  //         // Then pause it now
+  //         videos[i].pause();
+  //       }
+  //     }
+  //   }
+
+  //   for (var i = 0; i < videos.length; i++)
+  //     videos[i].addEventListener('play', function () { pauseAll(this) }, true);
+  // })
+
+</script>
