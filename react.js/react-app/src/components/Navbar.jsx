@@ -2,6 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function Navbar(props) {
+  const changePower = (event)=>{
+    event.classList.replace("non-active","is-active");
+  }
   return (
     <>
     <nav className="navbar navbar-expand-lg bg-light">
@@ -13,10 +16,10 @@ export default function Navbar(props) {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav mx-auto">
           <li className="nav-item">
-            <a className="nav-link non-active" aria-current="page" href="/">{props.navlink1}</a>
+            <a className="nav-link is-active" href="/">{props.navlink1}</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link non-active" href="/">{props.navlink2}</a>
+            <a className="nav-link non-active" onClick={changePower} href="/components/About.jsx">{props.navlink2}</a>
           </li>
           <li className="nav-item">
             <a className="nav-link non-active" href="/">{props.navlink3}</a>
@@ -37,7 +40,7 @@ Navbar.propTypes = {
 }
 
 Navbar.defaultProps = {
-    title: "SciTech",
+    title: "NONE",
     navlink1: "link-here",
     navlink2: "link-here",
     navlink3: "link-here"

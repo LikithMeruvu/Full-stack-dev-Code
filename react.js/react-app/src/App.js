@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import React from 'react';
 import './App.css';
+// import About from './components/About';
 import InputArea from './components/InputArea';
 import Navbar from './components/Navbar';
 
