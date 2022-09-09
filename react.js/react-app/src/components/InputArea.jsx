@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import $ from 'jquery';
+// import $ from 'jquery';
 import '../App.css';
 
 // let message;
@@ -10,19 +10,19 @@ export default function InputArea(props) {
         overflowX : 'scroll'
     }
 
-    const DM = () =>{
-        console.log('hello');
-        let textAreaStyle = {
-            backgroundColor : 'rgba(255,255,23)',
-            color : 'red',
-            border : '1px solid red'
-            // backgroundColor : 'black',
-            // fontWeight : 'bolder'
-        };
-        $(".dm").on("click",function(){
-            $("code").setAttribute("style",textAreaStyle);
-        });
-    }
+    // const DM = () =>{
+    //     console.log('hello');
+    //     let textAreaStyle = {
+    //         backgroundColor : 'rgba(255,255,23)',
+    //         color : 'red',
+    //         border : '1px solid red'
+    //         // backgroundColor : 'black',
+    //         // fontWeight : 'bolder'
+    //     };
+    //     $(".dm").on("click",function(){
+    //         $("code").setAttribute("style",textAreaStyle);
+    //     });
+    // }
 
     let [text, setText] = useState("ENTER YOUR TEXT HERE");
     const Encript = () => {
@@ -92,24 +92,24 @@ export default function InputArea(props) {
     }
     return (
         <>
-            <h1 className="IA-h1" id="h1">Write or Paste Your Text</h1>
-            <div className="container my-2">
+            <h1 className={`IA-h1 bg-${props.modeType}  text-${props.modeType === 'light'? 'dark' : 'light'}`} id="h1">Write or Paste Your Text</h1>
+            {/* <div className={`container my-2 bg-${props.modeType}  text-${props.modeType === 'light'? 'dark' : 'light'}`}>
                 <h4 id="ok" style={{visibility : 'hidden' , textAlign:'center'}}>Your Text Has been Encripted copy the text</h4>
-            </div>
-            <div className="mb-3 area">
-                <textarea className="form-control" id="input" value={text} onChange={change} spellCheck="false" placeholder="enter your text here" rows="8"></textarea>
+            </div> */}
+            <div className={`mb-3 area bg-${props.modeType}  text-${props.modeType === 'light'? 'dark' : 'light'}`}>
+                <textarea className={`form-control bg-${props.modeType}  text-${props.modeType === 'light'? 'dark' : 'light'}`} id="input" value={text} onChange={change} spellCheck="false" placeholder="enter your text here" rows="8"></textarea>
             </div>
             <button className="btn btn-outline-primary mx-1 see ec" onClick={Encript}>Encript Text</button>
             <button className="btn btn-outline-primary mx-1 hide dc" onClick={Decript}>Decript Text</button>
             <button className="btn btn-outline-primary lc mx-2" onClick={Lc}>Lower Case The Text</button>
             <button className="btn btn-outline-primary uc" onClick={Uc}>Upper Case The Text</button>
             <br/>
-            <button className="btn dm" onClick={DM}>Enable Dark Mode</button>
-            <div className="container my-3">
+            <button className="btn dm" onClick={props.toggleDM}>Enable Dark Mode</button>
+            <div className={`container my-3 bg-${props.modeType}  text-${props.modeType === 'light'? 'dark' : 'light'}`}>
                 <h5>You Have Written A Total {text.length} Charecters and  {text.split(" ").length} words</h5>
             </div>
 
-            <div className="prv container" style={prvStyle}>
+            <div className={`prv container bg-${props.modeType}  text-${props.modeType === 'light'? 'dark' : 'light'}`} style={prvStyle}>
                 <h2>Preview From Here</h2>
                 <code className="hide">{text}</code>
             </div>

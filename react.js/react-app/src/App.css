@@ -7,12 +7,19 @@
   font-family: var(--font);
   font-size: 1.1rem;
   font-weight: bold;
-  /* background-color: rgb(187, 255, 200); */
   color:#fff;
-  
   border-radius:15px;
   background: rgb(38, 0, 63);
 }
+.is-bg-active{
+  font-family: var(--font);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color:#fff;
+  border-radius:15px;
+  background: rgb(0, 255, 238);
+}
+
 .is-active:hover{
   color:#fff;
 }
