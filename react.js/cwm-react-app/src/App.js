@@ -1,10 +1,10 @@
-import Counter from './components/counter'
-// import './App.css';
+import React from 'react'
 
 function App() {
+
   return (
     <>
-      <Counter />
+    
     </>
   );
 }
