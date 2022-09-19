@@ -1,11 +1,11 @@
 import React from 'react'
-import TextToSpeech from './components/TextToSpeech'
+// import TextToSpeech from './components/TextToSpeech'
 
 function App() {
 
   return (
     <>
-        <TextToSpeech />
+      
     </>
   );
 }
