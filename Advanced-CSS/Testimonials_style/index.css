@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fff;
+    line-height: 1.3;
+}
+
+.testimonials{
+    margin : 100px 30px;
+    display : grid;
+    grid-template-columns: repeat(4,1fr);
+    gap : 15px;
+}
+
+.card{
+    background-color :bisque;
+    border-radius : 20px;
+    padding : 15px;
+    margin-bottom: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.head-card{
+    display: flex;
+    align-items : center;
+    margin : 10px;
+}
+.info-card > h6{
+    opacity : 50%;
+}
+span{
+    font-size : 1rem;
+}
+.one{
+    background : rgb(127, 85, 255);
+    color : white;
+    background-image: url("./images/wave.png");
+    background-repeat: no-repeat;
+    background-position: top 10px right 40px;
+    background-size: 80px;
+    /* opacity : 80%; */
+}
+.two{
+    background : rgb(7, 81, 5);
+    color : white;
+    background-image: url("./images/wave.png");
+    background-repeat: no-repeat;
+    background-position: top 10px right 40px;
+    background-size: 80px;
+    /* opacity : 80%; */
+}
+
+.three{
+    background : rgb(255, 66, 66);
+    color : white;
+    background-image: url("./images/wave.png");
+    background-repeat: no-repeat;
+    background-position: top 10px right 40px;
+    background-size: 80px;
+    /* opacity : 80%; */
+}
+
+.four{
+    background : rgb(255, 13, 191);
+    color : white;
+    background-image: url("./images/wave.png");
+    background-repeat: no-repeat;
+    background-position: top 10px right 40px;
+    background-size: 80px;
+    /* opacity : 80%; */
+}
+
+.five{
+    background : rgb(6, 255, 255);
+    /* color : white; */
+    background-image: url("./images/wave.png");
+    background-repeat: no-repeat;
+    background-position: top 10px right 40px;
+    background-size: 80px;
+    /* opacity : 80%; */
+}
+
+
+img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right : 15px;
+}
+
+.card:nth-of-type(1){
+    grid-column: 1 / 3;
+}
+.card:nth-of-type(4){
+    grid-column: 2 / 4;
+    grid-row:2;
+}
+.card:nth-of-type(5){
+    grid-column: 4 / 5;
+    grid-row: 1/ 3;
+}
+@media(max-width:768px){
+    .testimonials{
+        grid-template-columns: 1fr;
+        width: 100%;
+    margin : 100px 30px;
+    
+    }
+    .card:nth-of-type(1){
+        grid-column: 1;
+    }
+    .card:nth-of-type(4){
+        grid-column: 1;
+        grid-row:2;
+    }
+    .card:nth-of-type(5){
+        grid-column: 1;
+        grid-row: 1/ 3;
+    }
+}
