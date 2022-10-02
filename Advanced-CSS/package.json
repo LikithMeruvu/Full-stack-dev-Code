@@ -4,7 +4,7 @@
   "description": "the text package",
   "main": "index.js",
   "scripts": {
-    "compile_scss" : "node-sass ./project_1/index.scss ./project_1/index.css"
+    "compile_scss" : "node-sass ./project_1/index.scss ./project_1/index.css -w"
   },
   "author": "likith",
   "license": "ISC",

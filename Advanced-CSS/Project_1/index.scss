@@ -1,196 +1,197 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+$color-left-grad: rgb(0, 99, 110);
+$color-right-grad: rgb(45, 118, 0);
+$color-light: #fff;
+$color-dark: #000000;
 
-
-html{
-
-    font-size : 100%;
+html {
+    font-size: 100%;
 }
 
-body{
-    color : rgb(255, 255, 255);
+body {
+    color: $color-light;
     font-weight: 400;
     line-height: 1.7;
     /* font-family:'Times New Roman', Times, serif; */
-    padding : 20px;
+    padding: 20px;
 }
 
-.head{
-    height : 95vh;
-    background-image:linear-gradient(83deg, rgba(0, 99, 110, 0.382) 50%, rgba(45, 118, 0, 0.382) 50%),url("./images/Studio_Project.jpeg") !important;
+.head {
+    height: 95vh;
+    background-image: linear-gradient(83deg, rgba($color-left-grad, 0.382) 50%, rgba($color-right-grad, 0.382) 50%),
+        url("./images/Studio_Project.jpeg") !important;
     background-position: center;
     background-size: cover;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0% 100%);
-}
-.head-imgs{
-    position: absolute;
-    top:2rem;
-    left : 2rem;
-    color : black;
-}
 
-.logo{
-    height: 3.5rem;
-    width : 3.5rem;
+    &head-imgs {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        color: $color-dark;
+    }
+    & .logo {
+        height: 3.5rem;
+        width: 3.5rem;
+        backface-visibility: hidden;
+        animation: LeftMoveInFade 1.5s ease-out;
+        margin: 1% 1.5%;
+    }
 }
-
-.head-content{
+.head-content {
     position: absolute;
     top: 45%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     /* filter: brightness(100%); */
     font-weight: 800;
     /* border : 1px solid black; */
     text-align: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 
-.hch{
-    letter-spacing: 0.6rem;
-    font-size: 4.5rem;
-    display: block;
-    text-transform: uppercase;
-    text-shadow: 0 0 1rem rgb(75, 255, 246), 0 0 2rem rgb(0, 251, 255), 0 0 3rem #3300ff, 0 0 4rem #4dff00, 0 0 5rem #62faff, 0 0 6rem #42fff2, 0 0 7rem #2affff;
-    animation-name: LeftMoveInFade;
-    animation-duration: 1.5s;
-    /* animation-timing-function: ease-out; */
-}
-
-.hcs{
-    letter-spacing: 0.2rem;
-    font-size: 2.5rem;
-    display: block;
-    text-transform: capitalize;
-    text-shadow: 0 0 1rem rgb(75, 255, 246), 0 0 2rem rgb(0, 251, 255), 0 0 3rem #3300ff, 0 0 4rem #4dff00, 0 0 5rem #62faff, 0 0 6rem #42fff2, 0 0 7rem #2affff;
-    animation-name: RightMoveInFade;
-    animation-duration: 1.5s;
-    /* animation-timing-function: ease-out; */
-}
-
-@keyframes  LeftMoveInFade {
-    0%{
-        opacity :0;
-        transform : translateX(-5.5rem);
+    & .hch {
+        letter-spacing: 0.6rem;
+        font-size: 4.5rem;
+        display: block;
+        text-transform: uppercase;
+        text-shadow: 0 0 1rem rgb(75, 255, 246), 0 0 2rem rgb(0, 251, 255), 0 0 3rem #3300ff, 0 0 4rem #4dff00,
+            0 0 5rem #62faff, 0 0 6rem #42fff2, 0 0 7rem #2affff;
+        animation-name: LeftMoveInFade;
+        animation-duration: 1.5s;
+        /* animation-timing-function: ease-out; */
     }
-    80%{
-        opacity :0.8;
-        transform : translateX(5.5rem);
-    }
-
-    100%{
-        opacity :1;
-        transform : translateX(0);
+    & .hcs {
+        letter-spacing: 0.2rem;
+        font-size: 2.5rem;
+        display: block;
+        text-transform: capitalize;
+        text-shadow: 0 0 1rem rgb(75, 255, 246), 0 0 2rem rgb(0, 251, 255), 0 0 3rem #3300ff, 0 0 4rem #4dff00,
+            0 0 5rem #62faff, 0 0 6rem #42fff2, 0 0 7rem #2affff;
+        animation-name: RightMoveInFade;
+        animation-duration: 1.5s;
+        /* animation-timing-function: ease-out; */
     }
 }
 
-@keyframes  RightMoveInFade {
-    0%{
-        opacity :0;
-        transform : translateX(5.5rem);
+.btn {
+    &,
+    &:after {
+        text-transform: uppercase;
+        padding: 1rem 4rem;
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(90, 90, 90);
+        transition: all 0.4s;
+        font-size: 1.4rem;
     }
-    80%{
-        opacity :0.8;
-        transform : translateX(-5.5rem);
+
+    &-head {
+        margin-top: 2rem;
+        border-radius: 10rem;
+        background-color: rgba(255, 255, 255, 0.937);
+        position: relative;
+        animation: FadeDownIn 1.5;
     }
 
-    100%{
-        opacity :1;
-        transform : translateX(0);
+    &:hover {
+        transform: translateY(-0.4rem);
+        box-shadow: 0 1rem 2rem rgba($color-dark, 0.311);
+    }
+    &:active {
+        transform: translateY(0.1rem);
+        box-shadow: 0 0.5rem 1rem rgba($color-dark, 0.2);
+    }
+    &-anime {
+        animation: FadeDownIn 1.5s;
     }
 }
 
-.logo{
-    backface-visibility: hidden;
-    animation : LeftMoveInFade 1.5s ease-out;
-}
-
-
-.btn,
-.btn:after{
-    text-transform: uppercase;
-    padding:1rem 4rem;
-    display: inline-block;
-    text-decoration: none;
-    color : rgb(90, 90, 90);
-    transition: all .4s;
-    font-size: 1.4rem;
-}
-
-.btn-head{
-    margin-top: 2rem;
-    border-radius: 10rem;
-    background-color :rgba(255, 255, 255, 0.937);
-    position: relative;
-    animation: FadeDownIn 1.5 ;
-}
-
-.btn:hover{
-    transform: translateY(-.4rem);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.311);
-}
-.btn:active{
-    transform: translateY(.1rem);
-    box-shadow: 0 0.5rem 1rem rgba(0,0,2,.2);
-}
-
-@keyframes FadeDownIn{
-    0%{
+@keyframes RightMoveInFade {
+    0% {
         opacity: 0;
-        transform : translateY(5rem)
+        transform: translateX(5.5rem);
     }
-    80%{
+    80% {
         opacity: 0.8;
-        transform : translateY(-2rem)
+        transform: translateX(-5.5rem);
     }
-    100%{
-        opacity : 1;
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes LeftMoveInFade {
+    0% {
+        opacity: 0;
+        transform: translateX(-5.5rem);
+    }
+    80% {
+        opacity: 0.8;
+        transform: translateX(5.5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes FadeDownIn {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+    80% {
+        opacity: 0.8;
+        transform: translateY(-2rem);
+    }
+    100% {
+        opacity: 1;
         transform: translateY(0);
     }
 }
 
-.btn-anime{
-    animation: FadeDownIn 1.5s;
-}
-
-@media (max-width: 768px){
-    html{
-        font-size:100%;
+@media (max-width: 768px) {
+    html {
+        font-size: 100%;
     }
-    .head{
+    .head {
         height: 90vh;
     }
-    .head-content{
-        font-size : 2rem;
+    .head-content {
+        font-size: 2rem;
     }
-    .logo{
-        width : 50px;
+    .logo {
+        width: 50px;
         height: 40px;
     }
-    body{
-    padding : 0px;
+    body {
+        padding: 0px;
     }
-    .hch{
-        font-size :1.5rem;
+    .hch {
+        font-size: 1.5rem;
     }
-    .hcs{
-        font-size :1rem
+    .hcs {
+        font-size: 1rem;
     }
-    .btn{
-        padding : 0.5rem 2rem;
+    .btn {
+        padding: 0.5rem 2rem;
         font-size: 0.5rem;
-        margin-top : 15px;
-        font-size: 0.8rem; 
+        margin-top: 15px;
+        font-size: 0.8rem;
     }
-    .head-imgs{
+    .head-imgs {
         position: absolute;
-        top:1rem;
-        left : 1rem;
-        color : black;
+        top: 1rem;
+        left: 1rem;
+        color: black;
     }
 }
