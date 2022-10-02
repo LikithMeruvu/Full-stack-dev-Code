@@ -1,0 +1,17 @@
+{
+  "name": "advanced_css",
+  "version": "1.0.0",
+  "description": "the text package",
+  "main": "index.js",
+  "scripts": {
+    "compile_scss" : "node-sass ./project_1/index.scss ./project_1/index.css"
+  },
+  "author": "likith",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  },
+  "dependencies": {
+    "jquery": "^3.6.1"
+  }
+}
