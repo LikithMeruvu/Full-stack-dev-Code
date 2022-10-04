@@ -1,0 +1,24 @@
+.head {
+    color : #fff;
+    height: 95vh;
+    background-image: linear-gradient(83deg, rgba($color-left-grad, 0.382) 50%, rgba($color-right-grad, 0.382) 50%),
+        url("./images/Studio_Project.jpeg") !important;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0% 100%);
+
+    &head-imgs {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        color: $color-dark;
+    }
+    & .logo {
+        height: 3.5rem;
+        width: 3.5rem;
+        backface-visibility: hidden;
+        animation: LeftMoveInFade 1.5s ease-out;
+        margin: 1% 1.5%;
+    }
+}

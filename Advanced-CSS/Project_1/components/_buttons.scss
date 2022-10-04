@@ -1,0 +1,33 @@
+
+.btn {
+    &,
+    &:after {
+        text-transform: uppercase;
+        padding: 1rem 4rem;
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(90, 90, 90);
+        transition: all 0.4s;
+        font-size: 1.4rem;
+    }
+
+    &-head {
+        margin-top: 2rem;
+        border-radius: 10rem;
+        background-color: rgba(255, 255, 255, 0.937);
+        position: relative;
+        animation: FadeDownIn 1.5;
+    }
+
+    &:hover {
+        transform: translateY(-0.4rem);
+        box-shadow: 0 1rem 2rem rgba($color-dark, 0.311);
+    }
+    &:active {
+        transform: translateY(0.1rem);
+        box-shadow: 0 0.5rem 1rem rgba($color-dark, 0.2);
+    }
+    &-anime {
+        animation: FadeDownIn 1.5s;
+    }
+}

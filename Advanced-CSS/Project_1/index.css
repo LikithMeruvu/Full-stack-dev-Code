@@ -7,30 +7,43 @@ html {
   font-size: 100%; }
 
 body {
-  color: #fff;
   font-weight: 400;
   line-height: 1.7;
   /* font-family:'Times New Roman', Times, serif; */
   padding: 20px; }
 
-.head {
-  height: 95vh;
-  background-image: linear-gradient(83deg, rgba(0, 99, 110, 0.382) 50%, rgba(45, 118, 0, 0.382) 50%), url("./images/Studio_Project.jpeg") !important;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0% 100%); }
-  .headhead-imgs {
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    color: #000000; }
-  .head .logo {
-    height: 3.5rem;
-    width: 3.5rem;
-    backface-visibility: hidden;
-    animation: LeftMoveInFade 1.5s ease-out;
-    margin: 1% 1.5%; }
+@keyframes RightMoveInFade {
+  0% {
+    opacity: 0;
+    transform: translateX(5.5rem); }
+  80% {
+    opacity: 0.8;
+    transform: translateX(-5.5rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes LeftMoveInFade {
+  0% {
+    opacity: 0;
+    transform: translateX(-5.5rem); }
+  80% {
+    opacity: 0.8;
+    transform: translateX(5.5rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes FadeDownIn {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem); }
+  80% {
+    opacity: 0.8;
+    transform: translateY(-2rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
 .head-content {
   position: absolute;
@@ -88,38 +101,42 @@ body {
 .btn-anime {
   animation: FadeDownIn 1.5s; }
 
-@keyframes RightMoveInFade {
-  0% {
-    opacity: 0;
-    transform: translateX(5.5rem); }
-  80% {
-    opacity: 0.8;
-    transform: translateX(-5.5rem); }
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
+.head {
+  color: #fff;
+  height: 95vh;
+  background-image: linear-gradient(83deg, rgba(0, 99, 110, 0.382) 50%, rgba(45, 118, 0, 0.382) 50%), url("./images/Studio_Project.jpeg") !important;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0% 100%); }
+  .headhead-imgs {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    color: #000000; }
+  .head .logo {
+    height: 3.5rem;
+    width: 3.5rem;
+    backface-visibility: hidden;
+    animation: LeftMoveInFade 1.5s ease-out;
+    margin: 1% 1.5%; }
 
-@keyframes LeftMoveInFade {
-  0% {
-    opacity: 0;
-    transform: translateX(-5.5rem); }
-  80% {
-    opacity: 0.8;
-    transform: translateX(5.5rem); }
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
-
-@keyframes FadeDownIn {
-  0% {
-    opacity: 0;
-    transform: translateY(5rem); }
-  80% {
-    opacity: 0.8;
-    transform: translateY(-2rem); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
+.row {
+  max-width: 100rem;
+  margin: 0 auto;
+  background-color: #eee; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row .col-1-of-2 {
+    width: calc((100% - 8rem) /2);
+    float: left;
+    background-color: orangered; }
+    .row .col-1-of-2:not(:last-child) {
+      margin-right: 8rem; }
 
 @media (max-width: 768px) {
   html {

@@ -1,0 +1,34 @@
+.head-content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* filter: brightness(100%); */
+    font-weight: 800;
+    /* border : 1px solid black; */
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+    & .hch {
+        letter-spacing: 0.6rem;
+        font-size: 4.5rem;
+        display: block;
+        text-transform: uppercase;
+        text-shadow: 0 0 1rem rgb(75, 255, 246), 0 0 2rem rgb(0, 251, 255), 0 0 3rem #3300ff, 0 0 4rem #4dff00,
+            0 0 5rem #62faff, 0 0 6rem #42fff2, 0 0 7rem #2affff;
+        animation-name: LeftMoveInFade;
+        animation-duration: 1.5s;
+        /* animation-timing-function: ease-out; */
+    }
+    & .hcs {
+        letter-spacing: 0.2rem;
+        font-size: 2.5rem;
+        display: block;
+        text-transform: capitalize;
+        text-shadow: 0 0 1rem rgb(75, 255, 246), 0 0 2rem rgb(0, 251, 255), 0 0 3rem #3300ff, 0 0 4rem #4dff00,
+            0 0 5rem #62faff, 0 0 6rem #42fff2, 0 0 7rem #2affff;
+        animation-name: RightMoveInFade;
+        animation-duration: 1.5s;
+        /* animation-timing-function: ease-out; */
+    }
+}
