@@ -31,3 +31,28 @@
         animation: FadeDownIn 1.5s;
     }
 }
+
+
+.about-btn{
+    &:link,
+    &:visited{
+        font-size: 1.3rem;
+        display : inline-block;
+        color: $color-dark;
+        text-decoration: none;
+        padding : 10px;
+        border-bottom: 1px solid rgb(0, 0, 0);
+        transition : all .4s;
+    }
+
+    &:hover{
+        background: $color-btn;
+        color : $color-dark;
+        box-shadow: 0 1rem 2rem rgba($color-dark-light,.3);
+        transform : translateY(-5px);
+    }
+    &:active{
+        transform : translateY(0);
+        box-shadow: 0 1rem 2rem rgba($color-dark-light,.3);
+    }
+}

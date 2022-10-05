@@ -133,6 +133,52 @@ body {
 .btn-anime {
   animation: FadeDownIn 1.5s; }
 
+.about-btn:link, .about-btn:visited {
+  font-size: 1.3rem;
+  display: inline-block;
+  color: #000000;
+  text-decoration: none;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  transition: all .4s; }
+
+.about-btn:hover {
+  background: aqua;
+  color: #000000;
+  box-shadow: 0 1rem 2rem rgba(73, 73, 73, 0.3);
+  transform: translateY(-5px); }
+
+.about-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 1rem 2rem rgba(73, 73, 73, 0.3); }
+
+.img_gallery {
+  position: relative; }
+  .img_gallery img {
+    width: 65%;
+    height: 20rem;
+    position: absolute;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1.5rem 4rem rgba(73, 73, 73, 0.4);
+    outline-offset: 1rem;
+    transition: all 0.3s; }
+    .img_gallery img.picture1 {
+      top: -3rem;
+      left: 0; }
+    .img_gallery img.picture2 {
+      top: 5rem;
+      right: 0; }
+    .img_gallery img.picture1 {
+      left: 15%;
+      top: 10rem; }
+    .img_gallery img:hover {
+      outline: 1.5rem solid aqua;
+      transform: scale(1.05);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 10; }
+  .img_gallery:hover .img_gallery img:not(:hover) {
+    transform: scale(0.8); }
+
 .head {
   color: #fff;
   height: 95vh;
@@ -155,7 +201,7 @@ body {
 
 .section-about {
   background-color: #f0f0f0;
-  padding: 20rem 5%;
+  padding: 15rem 5%;
   margin-top: -15vh; }
 
 .row {
