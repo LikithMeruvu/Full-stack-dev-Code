@@ -84,7 +84,7 @@ body {
   color: transparent;
   transition: all .2s; }
   .secondary-heading:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1);
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.395); }
 
 .about-h3 {
@@ -155,29 +155,62 @@ body {
 .img_gallery {
   position: relative; }
   .img_gallery img {
-    width: 65%;
-    height: 20rem;
+    width: 100%;
+    height: 28rem;
     position: absolute;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     box-shadow: 0 1.5rem 4rem rgba(73, 73, 73, 0.4);
     outline-offset: 1rem;
     transition: all 0.3s; }
     .img_gallery img.picture1 {
-      top: -3rem;
-      left: 0; }
+      top: 0;
+      left: 12rem; }
     .img_gallery img.picture2 {
-      top: 5rem;
-      right: 0; }
-    .img_gallery img.picture1 {
-      left: 15%;
-      top: 10rem; }
+      top: 10rem;
+      right: 2.5rem; }
+    .img_gallery img.picture3 {
+      top: 4rem;
+      left: 4.5rem; }
     .img_gallery img:hover {
       outline: 1.5rem solid aqua;
-      transform: scale(1.05);
+      transform: scale(0.9) translateY(-0.8rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 10; }
-  .img_gallery:hover .img_gallery img:not(:hover) {
-    transform: scale(0.8); }
+    .img_gallery img:not(:hover) {
+      transform: scale(0.8); }
+
+.features {
+  text-align: center;
+  padding: 20rem 0;
+  z-index: 1;
+  clip-path: polygon(0 17%, 100% 0, 100% 80%, 0% 100%);
+  background-image: linear-gradient(83deg, rgba(0, 99, 110, 0.682) 50%, rgba(45, 118, 0, 0.682) 50%), url("../images/pic-1.jpg") !important;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: -0;
+  top: -12em; }
+  .features .feature-box {
+    background-color: #fff;
+    padding: 2rem;
+    opacity: 0.8;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
+    transition: all 0.2s; }
+    .features .feature-box:hover {
+      transform: translateY(-20px) scaleY(1.2) scaleX(1.2);
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8); }
+  .features .feature-head {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #494949;
+    margin-bottom: 1.2rem; }
+  .features .feature-text {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.7rem; }
+  .features i {
+    margin-bottom: 3rem; }
 
 .head {
   color: #fff;
@@ -201,7 +234,7 @@ body {
 
 .section-about {
   background-color: #f0f0f0;
-  padding: 15rem 5%;
+  padding: 12rem 5% 20rem 5%;
   margin-top: -15vh; }
 
 .row {
@@ -214,8 +247,7 @@ body {
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    float: left;
-    padding: 1% 2%; }
+    float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 8rem; }
   .row .col-1-of-2 {

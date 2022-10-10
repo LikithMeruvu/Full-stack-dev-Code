@@ -1,8 +1,8 @@
 .img_gallery {
     position: relative;
     & img {
-        width: 65%;
-        height: 20rem;
+        width: 100%;
+        height: 28rem;
         position: absolute;
         box-shadow: 0 1.5rem 4rem rgba($color-dark, 0.4);
         box-shadow: 0 1.5rem 4rem rgba($color-dark-light, 0.4s);
@@ -10,25 +10,26 @@
 
         transition: all 0.3s;
         &.picture1 {
-            top: -3rem;
-            left: 0;
+            top :0;
+            left :12rem;
         }
         &.picture2 {
-            top: 5rem;
-            right: 0;
-        }
-        &.picture1 {
-            left: 15%;
             top: 10rem;
+            right: 2.5rem;
+        }
+        &.picture3 {
+            top: 4rem;
+            left: 4.5rem;
         }
         &:hover {
             outline : 1.5rem solid $color-btn;
-            transform: scale(1.05);
+            transform: scale(.9) translateY(-.8rem);
             box-shadow: 0 2.5rem 4rem rgba($color-dark, 0.5);
             z-index: 10;
         }
+        &:not(:hover){
+            transform : scale(.8);
+        }
     }
-    &:hover &.photo:not(:hover){
-        transform : scale(.8);
-    }
+    
 }

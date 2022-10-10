@@ -1,0 +1,42 @@
+.features {
+    text-align: center;
+    padding: 20rem 0;
+    z-index: 1;
+    clip-path: polygon(0 17%, 100% 0, 100% 80%, 0% 100%);
+    background-image: linear-gradient(83deg, rgba($color-left-grad, 0.682) 50%, rgba($color-right-grad, 0.682) 50%),
+        url("../images/pic-1.jpg") !important;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: -0;
+    top: -12em;
+
+    & .feature-box {
+        background-color: $color-light;
+        padding: 2rem;
+        opacity: 0.8;
+        box-shadow: 0 1.5rem 4rem rgba($color-dark, 0.5);
+        transition: all 0.2s;
+
+        &:hover {
+            transform: translateY(-20px) scaleY(1.2) scaleX(1.2);
+            box-shadow: 0 1.5rem 4rem rgba($color-dark, 0.8);
+        }
+    }
+    & .feature-head {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $color-dark-light;
+        margin-bottom: 1.2rem;
+    }
+    & .feature-text {
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+
+    & i {
+        margin-bottom: 3rem;
+    }
+}
