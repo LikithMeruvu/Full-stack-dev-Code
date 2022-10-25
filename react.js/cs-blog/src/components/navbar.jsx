@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../App.css";
 
 export default function navbar() {
@@ -7,8 +7,10 @@ export default function navbar() {
    
     return (
         <nav>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "green" : "blue" })} className={`nav-link`} to="/" >Home</NavLink>
-            <NavLink style={({ isActive }) => ({ color: isActive ? "green" : "blue" })} className={`nav-link`} to="/about" >About</NavLink>
+            <Link className={`nav-link`} to="/" >Home</Link>
+            <Link className={`nav-link`} to="/about" >About</Link>
+            <Link className={`nav-link`} to="/about" >Blog</Link>
+            <Link className={`nav-link`} to="/about" >Contact</Link>
         </nav>
     )
 }

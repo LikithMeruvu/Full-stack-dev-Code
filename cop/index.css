@@ -1,0 +1,23 @@
+
+*{
+    transition : all .3s;
+}
+
+.mar{
+    margin-right: 180px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.slider-img{
+    height: 90vh;
+    width: 100vw;
+    filter: brightness(40%)
+}
+
+@media (max-width: 768px){
+    .mar{
+        margin-right: 0px;
+    }
+}
